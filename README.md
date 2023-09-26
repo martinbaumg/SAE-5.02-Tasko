@@ -1,2 +1,2 @@
 # SAE-5.02-Tasko
-Tasko: Streamline tasks with a user-friendly app. Developed by a dedicated team of 6, it handles frontend, backend, and Docker deployment.
+Tasko is a lightweight and intuitive task management application designed to streamline your daily workflow. With a user-friendly interface and powerful features, Tasko helps you organize your tasks, set priorities, and stay productive. Developed by a dedicated team of six members, including a Product Owner, Scrum Master, and four developers, Tasko handles both frontend and backend development as well as seamless deployment using Docker. Say goodbye to chaos and hello to efficient task management with Tasko.
