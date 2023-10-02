@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasko - Outil de Gestion</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .content {
+            flex-grow: 1;
+        }
+        .logo img {
+            width: 25%;
+            max-width: 200px; /* Limite la largeur du logo à 200px */
+            margin-top: 20px;
+        }
+        .project-title {
+            font-size: 32px;
+            margin-top: 20px;
+        }
+        .project-description {
+            font-size: 18px;
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+        .download-button {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            margin: 10px;
+        }
+        .download-button:hover {
+            background-color: #0056b3;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+        .footer-logo {
+            font-size: 24px;
+            color: #007bff;
+            margin-right: 10px;
+        }
+        .footer-link {
+            color: #fff;
+            text-decoration: none;
+        }
+        .footer-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="logo">
+            <img src="tasko.png" alt="Logo Tasko">
+        </div>
+        <div class="project-title">
+            Tasko
+        </div>
+        <div class="project-description">
+            L'outil de gestion qui révolutionnera votre travail.
+        </div>
+        <a href="lien_windows.zip" class="download-button">
+            <i class="fab fa-windows"></i> Télécharger pour Windows
+        </a>
+        <a href="lien_macos.zip" class="download-button">
+            <i class="fab fa-apple"></i> Télécharger pour MacOS
+        </a>
+        <a href="lien_linux.zip" class="download-button">
+            <i class="fab fa-linux"></i> Télécharger pour Linux
+        </a>
+    </div>
+    <div class="footer">
+        <span class="footer-logo">
+            <i class="fab fa-github"></i>
+        </span>
+        <span>&copy; 2023 Tasko</span>
+        <a href="https://github.com/martinbaumg/SAE-5.02-Tasko" class="footer-link" target="_blank">Voir le projet sur GitHub</a>
+    </div>
+</body>
+</html>
