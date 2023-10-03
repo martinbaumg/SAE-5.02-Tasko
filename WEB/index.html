@@ -3,52 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page de Sélection de Langue</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .language-selector {
-            text-align: left;
-            vertical-align: top;
-        }
-        .flag-button {
-            border: none;
-            background: none;
-            cursor: pointer;
-            margin: 10px;
-        }
-        .flag-icon {
-            width: 50px;
-            height: auto;
-        }
-    </style>
+    <link rel="stylesheet" href="cssfile.css">
+    <title>Navbar avec Menu Dépliant</title>
 </head>
 <body>
-    <div class="language-selector">
-        <h1>Sélectionnez votre langue / Select your language / あなたが使う言語を選んでください /  Wähle deine Sprache  / elige tu idioma / Выберите ваш язык</h1>
-        <a href="fr.html" class="flag-button">
-            <img class="flag-icon" src="france.png" alt="French Flag">
-        </a>
-        <a href="en.html" class="flag-button">
-            <img class="flag-icon" src="etats-unis.png" alt="US Flag">
-        </a>
-        <a href="jp.html" class="flag-button">
-            <img class="flag-icon" src="japon.png" alt="JAP Flag">
-        </a>
-	    <a href="de.html" class="flag-button">
-            <img class="flag-icon" src="germany.png" alt="GER Flag">
-        </a>
-        <a href="es.html" class="flag-button">
-            <img class="flag-icon" src="espagnol.png" alt="ESP Flag">
-        </a>
-        <a href="ru.html" class="flag-button">
-            <img class="flag-icon" src="russie.png" alt="RUS Flag">
-        </a>
-    </div>
+    <header>
+        <nav class="navbar">
+            <div class="logo"> <img src="tasko2.png" alt="logo"></div>
+            <ul class="links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="produit.html">Produit</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">Support</a></li> <!-- mettre @ mail -->
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        
+        <div class="comment_app">
+            <h1 class="titre1">Commentaire</h1>
+
+        </div>
+        <div class="about_us">
+
+
+        </div>
+
+
+    </main>
+
+
+    <footer>
+        <div class="language_selector_change">
+            <label for="lang-select">Langue :</label>
+            <select id="lang-select">
+                <option value="fr">Français</option>
+                <option value="en">English</option>
+                <option value="en">Espagnol</option>
+                <option value="en">Russe</option>
+                <option value="en">Allemand</option>
+                <option value="en">Japonais</option>
+            </select>
+        </div>
+        <div class="link_project_github"><p>© 2023 Tasko <a href="https://github.com/martinbaumg/SAE-5.02-Tasko">Voir le projet sur GitHub</a></p></div>
+    </footer>
+    <script src="javascript.js"></script>
+
+
+
+
+
 </body>
 </html>
