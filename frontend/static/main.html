@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<title>TASKO</title>
+	</head>
+
+	<body>
+		<div class="row flex-nowrap">
+			<div class="container-fluid">
+				<div class="sidebar col-auto col-md-3 col-xl-2 px-sm-2 px-0">
+					<div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+						<a href="/" class="d-flex align-items-left pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+							<span class="sidebar-title d-none d-sm-inline">My Lists</span>
+						</a>
+						<ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+							<li class="nav-item">
+								<form method="get" action="/search" id="search">
+									<input name="q" type="text" size="40" placeholder="Search..." />
+								</form>
+								<div class="box">
+									<ul class="directory-list">
+										<li>
+											assets
+											<ul>
+												<li>
+													css
+													<ul>
+														<li>typography.css</li>
+														<li>layout.css</li>
+														<li>modules.css</li>
+														<li>states.css</li>
+														<li>theme.css</li>
+													</ul>
+												</li>
+												<li>
+													js
+													<ul>
+														<li>custom.js</li>
+														<li>jquery.js</li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+								<script src="../script/tasksview.js"></script>
+							</li>
+						</ul>
+						<hr />
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
