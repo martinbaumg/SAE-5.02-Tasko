@@ -1,0 +1,244 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2e2d2d;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar{
+    background-color: #2e2d2d;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    margin-left: 3%;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.navbar ul{
+    list-style-type: none;
+}
+
+.navbar ul li{
+    float: left;
+    width: 200px;
+    margin-right: 20px;
+    text-align: center;
+    position:relative;
+}
+
+.navbar ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.navbar a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+.navbar a:hover{
+    color: #787a7a;
+    border-bottom: 2px solid white;
+}
+
+.under-menu-under{
+    display: none;
+    box-shadow: 0px 1px 2px #2e2d2d;
+    background-color: #2e2d2d;
+    position: absolute;
+    width: 200px;
+    z-index: 1000;
+    top: 100%; 
+    left: 0;
+    flex-direction: row;
+}
+.navbar > ul > li:hover .under-menu-under{
+    display: block;
+}
+.under-menu-under li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+.under-menu-under a{
+    padding: 10px;
+    border-bottom: none;
+}
+.under-menu-under a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+
+.under-menu > a::after{
+    content:" ▼";
+    font-size: 12px;
+}
+
+.imglg{
+    width: 14%;
+    height: auto;
+    object-fit: cover;
+}
+
+.comment_app{
+    width: 30%;
+    height: 100%;
+    float: left;
+}
+
+.titre1{
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.about_us{
+    width: 70%;
+    height: 100%;
+    float: right;
+   
+}
+
+.titre2{
+    font-size: 1.5em;
+    font-weight: bold;
+    
+}
+
+.texte{
+    font-size: 1.2em;
+    text-align: justify;
+    margin:2%;
+}
+
+footer {
+    background-color: #2e2d2d;
+    color: #fff;
+    padding: 2px 0;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    align-items: center;
+    bottom: 0;
+    width: 100%;
+}
+
+.link_project_github {
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+label {
+    margin-right: 5px;
+}
+
+select {
+    padding: 5px;
+}
+
+/* Styles pour le lien GitHub */
+footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #787a7a;
+}
+
+/* CSS for Tasko.html file*/
+
+.text-app{
+    width: 100%;
+    height: 100%;
+}
+
+.carac-princi{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ne pas oublier le responsive  */
+
