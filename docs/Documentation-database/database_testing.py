@@ -4,6 +4,14 @@ import database_connection
 
 # We connect to the database
 db = database_connection.DatabaseConnection()
+"""Class to connect to the database and execute queries
+
+    Args:
+        mail (str): mail of the user
+        password (str): password of the user
+        name (str): name of the user
+        rights_id (int): rights_id of the user
+    """
 db.connect()  # Connect to the database
 
 # arguments
