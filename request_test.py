@@ -7,6 +7,27 @@ from requests_list import RequestList  # Correct the import statement for Reques
 db = database_connection.DatabaseConnection()
 db.connect()  # Connect to the database
 
+# Specify the task information
+name = "New Task PyTest"
+description = "Description of the task PyTest"
+priority_id = 1  # Replace with the actual priority_id
+flag_id = 1  # Replace with the actual flag_id
+user_id = 1  # Replace with the actual user_id
+state_id = 1  # Replace with the actual state_id
+subtask_id = 1  # Replace with the actual subtask_id
+due_date = "2021-01-01"  # Replace with the actual due_date
+
+# Create a query using the add_task method from RequestList
+query = RequestList.add_task(name, description, priority_id, flag_id, user_id, state_id, subtask_id, due_date)
+
+# Execute the query using the execute_query method
+db.execute_query(query)
+
+db.connection.commit()  # Commit the changes to the 
+
+db.disconnect()
+
+"""
 # Specify the username you want to query
 username = "Totor"  # Change this to the desired username
 task_id = 1  # Change this to the desired task_id
@@ -23,7 +44,7 @@ db.execute_query(query)
 db.connection.commit()  # Commit the changes to the database
 
 db.disconnect()  # Disconnect from the database
-
+"""
 
 
 ### This part is made to add a subtask and link it to a task ###
@@ -35,6 +56,7 @@ state_id = 1  # Replace with the actual state_id
 flag_id = 1  # Replace with the actual flag_id
 user_id = 1  # Replace with the actual user_id
 priority_id = 1  # Replace with the actual priority_id
+due_date = "2021-01-01"  # Replace with the actual due_date
 
 # Specify the task_id to which you want to link the subtask
 task_id = 1  # Replace with the actual task_id
@@ -44,7 +66,7 @@ cursor = db.connection.cursor()
 
 try:
     # Call the stored procedure to insert the subtask and retrieve the subtask_id
-    cursor.callproc("AddSubtaskAndReturnID", (subtask_name, subtask_description, state_id, flag_id, user_id, priority_id))
+    cursor.callproc("AddSubtaskAndReturnID", (subtask_name, subtask_description, state_id, flag_id, user_id, priority_id, due_date))
 
     # Fetch the subtask_id from the procedure result
     cursor.execute("SELECT @subtask_id;")

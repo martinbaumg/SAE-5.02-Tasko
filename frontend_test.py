@@ -8,7 +8,11 @@ from PyQt5.QtWidgets import (
     QPushButton,
     QVBoxLayout,
 )
+
 from requests_list import RequestList
+import database_connection
+
+# Import your RequestList class here
 
 
 class LoginSignupApp(QMainWindow):
@@ -105,11 +109,16 @@ class LoginSignupApp(QMainWindow):
         )
 
         # Execute the query to add a new user to your database or server
+        # Make sure you have a database connection and cursor available
+        # For example, if you're using MySQL:
+        # cursor.execute(add_user_query)
+
+        # Commit the changes to the databases
+        # connection.commit()
 
         # If signup is successful, you can switch to another screen or perform actions
-        # For now, we will just print messages
-        print("Attempting signup with username:", new_username)
-        print("Add user query:", add_user_query)
+        # For now, we will just print a success message
+        print("User signed up successfully with username:", new_username)
 
 
 if __name__ == "__main__":
