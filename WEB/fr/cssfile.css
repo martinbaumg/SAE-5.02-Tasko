@@ -39,8 +39,6 @@ header {
     position:relative;
 }
 
-
-
 .navbar a{
     display: block;
     text-decoration: none;
@@ -312,16 +310,19 @@ footer {
 
 
 /* MIse en page pour le responsive */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 320px) {
+
+    .body{
+        flex-direction: column;
+        margin: auto;
+        width: 100%;
+    }
+
 
     .navbar {
         flex-direction: column;
-        align-items: flex-start, center; /
-
-    }
-
-    .links {
-        width: 100%; 
+        align-items: flex-start, center;
+        width: 100%;
     }
 
     .under-menu {
@@ -336,5 +337,490 @@ footer {
     .navbar ul li:hover .under-menu-under {
         display: block; 
         align-items: flex-start, center;
+    }
+
+    .titre1-text-app{
+        margin-top: 5%;
+        font-size: 1.5em;
+    }
+
+    .links{
+        margin: 0%;
+        width: auto;
+    }
+
+    .logo{
+        width: 90%;
+        height: auto;
+        }
+
+    .carac-princi{
+        width: 90%;
+        margin: 0%;
+    }
+
+    .titre2-text-app{
+        font-size: 1em;
+        font-weight: bold;
+        text-align: left;
+        margin-left: 0%;
+    }
+    
+    .p1-text-app{
+        font-size: 0.8em;
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .li1{
+        font-size: 1.0em;
+        width: auto;
+        margin: 0%;
+        margin-top: 5%;
+        font-weight: bold;
+
+    }
+    
+    .paragraphe-li1{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+        font-weight: lighter;
+    }
+    
+    .li2{
+        font-size: 1.0em;
+        width: auto;
+        margin: 0%;
+        margin-top: 5%;
+        font-weight: bold;
+
+    }
+    
+    .paragraphe-li2{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+        font-weight: lighter;
+    }
+
+    .li3{
+        font-size: 1.0em;
+        width: auto;
+        margin: 0%;
+        margin-top: 5%;
+        font-weight: bold;
+
+    }
+    
+    .paragraphe-li3{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+        font-weight: lighter;
+    }
+
+    .li4{
+        font-size: 1.0em;
+        width: auto;
+        margin: 0%;
+        margin-top: 5%;
+        font-weight: bold;
+
+    }
+    
+    .paragraphe-li4{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+        font-weight: lighter;
+    }
+
+    .li5{
+        font-size: 1.0em;
+        width: auto;
+        margin: 0%;
+        margin-top: 5%;
+        font-weight: bold;
+
+    }
+    
+    .paragraphe-li5{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+        font-weight: lighter;
+    }
+
+    .li6{
+        font-size: 1.0em;
+        width: auto;
+        margin: 0%;
+        margin-top: 5%;
+        font-weight: bold;
+
+    }
+    
+    .paragraphe-li6{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+        font-weight: lighter;
+    }
+
+    .li7{
+        font-size: 1.0em;
+        width: auto;
+        margin: 0%;
+        margin-top: 5%;
+        font-weight: bold;
+
+    }
+    
+    .paragraphe-li7{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+        font-weight: lighter;
+    }
+
+    .p2-text-app{
+        font-size: 0.6em;
+        width: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-weight: bold;
+    }
+}
+
+/*Dimension for tablette a vertical screen*/ 
+@media screen and (min-width: 641px) {
+
+    .body{
+        flex-direction: column;
+        margin: auto;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start, center; /
+    }
+
+    .under-menu {
+        width: 100%;
+    }
+
+    .under-menu-under {
+        display: none; 
+    }
+
+
+    .navbar ul li:hover .under-menu-under {
+        display: block; 
+        align-items: flex-start, center;
+    }
+
+    .titre1-text-app{
+        margin: 0%;
+        margin-top: 10%;
+    }
+
+    .links{
+        margin: 0%;
+        width: auto;
+
+    }
+
+    .img{
+        width: 10%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .carac-princi{
+        width: 90%;
+        margin: 0%;
+    }
+
+    .titre2-text-app{
+        font-size: 1.75em;
+        font-weight: bold;
+        text-align: left;
+        margin-left: auto;
+    }
+    
+    .li1{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 8%;
+
+    }
+    
+    .paragraphe-li1{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+    
+    .li2{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 8%;
+    }
+    
+    .paragraphe-li2{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+    
+    .li3{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 8%;
+    }
+    
+    .paragraphe-li3{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+    
+    .li4{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 8%;
+    }
+    
+    .paragraphe-li4{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+    
+    .li5{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 8%;
+    }
+    
+    .paragraphe-li5{
+        font-size: 1.25em;
+        width: auto;
+        margin: 0%;  
+        margin-top: 2%;
+    }
+    
+    .li6{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 8%;
+    }
+    
+    .paragraphe-li6{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+    
+    .li7{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 8%;
+    }
+    
+    .paragraphe-li7{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+
+    .p2-text-app{
+        font-size: 1.2em;
+        width: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+
+@media screen and (min-width: 961px) {
+
+    .body{
+        flex-direction: column;
+        margin: auto;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start, center; /
+    }
+
+    .under-menu {
+        width: 100%;
+    }
+
+    .under-menu-under {
+        display: none; 
+    }
+
+
+    .navbar ul li:hover .under-menu-under {
+        display: block; 
+        align-items: flex-start, center;
+    }
+
+    .titre1-text-app{
+        margin-top: 10%;
+    }
+
+    .links{
+        margin: 0%;
+        width: auto;
+
+    }
+
+    .p1-text-app{
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .carac-princi{
+        width: 90%;
+        margin: 0%;
+    }
+
+    .titre2-text-app{
+        font-size: 1.75em;
+        font-weight: bold;
+        text-align: left;
+        margin-left: auto;
+    }
+    
+    .li1{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+
+    }
+    
+    .paragraphe-li1{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+    
+    .li2{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+    }
+    
+    .paragraphe-li2{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+    
+    .li3{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+    }
+    
+    .paragraphe-li3{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+    
+    .li4{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+    }
+    
+    .paragraphe-li4{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+    
+    .li5{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+    }
+    
+    .paragraphe-li5{
+        font-size: 1.25em;
+        width: auto;
+        margin: 0%;  
+        margin-top: 2%;
+    }
+    
+    .li6{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+    }
+    
+    .paragraphe-li6{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+    
+    .li7{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+    }
+    
+    .paragraphe-li7{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+
+    .p2-text-app{
+        font-size: 1.5em;
+        width: 100%;
+        margin-left: 0%;
     }
 }
