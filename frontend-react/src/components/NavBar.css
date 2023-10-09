@@ -1,14 +1,23 @@
 .navbar {
   background-color: #1c1d22;
-  height: 40px;
+  height: 20px;
   display: flex;
   justify-content: start;
   align-items: center;
+  box-shadow: 0px 2px 25px -5px rgba(0, 0, 0, 0.43);
 }
 
-.menu-bars {
+.menu-bars-open {
+  margin-left: 0.5%;
+  margin-top: 0.5%;
+  font-size: 1rem;
+  background: none;
+}
+
+.menu-bars-close {
   margin-left: 2rem;
-  font-size: 2rem;
+  margin-top: 2rem;
+  font-size: 1rem;
   background: none;
 }
 

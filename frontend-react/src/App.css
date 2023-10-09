@@ -16,3 +16,8 @@
   justify-content: center;
   font-size: 3rem;
 }
+
+.listName {
+  padding: 20px;
+  font-weight: bold;
+}
