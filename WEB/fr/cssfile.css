@@ -39,11 +39,7 @@ header {
     position:relative;
 }
 
-.navbar ul::after{
-    content: "";
-    display: table;
-    clear: both;
-}
+
 
 .navbar a{
     display: block;
@@ -87,7 +83,7 @@ header {
 }
 
 .under-menu > a::after{
-    content:" ▼";
+    content:"";
     font-size: 12px;
 }
 
@@ -306,7 +302,7 @@ footer {
 }
 
 
-/*css pour la page abut*/
+/*css pour la page about*/
 
 
 
@@ -315,36 +311,30 @@ footer {
 
 
 
+/* MIse en page pour le responsive */
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start, center; /
+
+    }
+
+    .links {
+        width: 100%; 
+    }
+
+    .under-menu {
+        width: 100%;
+    }
+
+    .under-menu-under {
+        display: none; 
+    }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ne pas oublier le responsive  */
-
+    .navbar ul li:hover .under-menu-under {
+        display: block; 
+        align-items: flex-start, center;
+    }
+}
