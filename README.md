@@ -2,12 +2,12 @@
 
 Tasko is a robust and user-friendly task management application designed to enhance your productivity and collaboration. Developed by a dedicated team of six talented individuals:
 
-- Martin Baumgaertner (Product Owner)
+- Martin Baumgaertner (Product Owner - Documentation Owner)
 - Mikhail Karapetyan (Developer)
 - Louis Pluviose (Developer)
 - Nicolas Wagner (Developer)
 - Thomas Strub (Scrum Master)
-- Victor Uettwiller (Developer)
+- Victor Uettwiller (Developer - Test Owner)
 
 ## Key Features
 

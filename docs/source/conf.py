@@ -1,21 +1,36 @@
-import os
+# Configuration file for the Sphinx documentation builder.
+#
+# For the full list of built-in configuration values, see the documentation:
+# https://www.sphinx-doc.org/en/master/usage/configuration.html
+
+# -- Project information -----------------------------------------------------
+# https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 import sys
+import os
 
+project = 'Tasko'
+copyright = '2023, Martin Baumgaertner'
+author = 'Martin Baumgaertner'
+release = '1.1'
 
-sys.path.insert(0, os.path.abspath('../Documentation-database'))
+sys.path.insert(0, '/Users/martin-baumgaertner/Documents/SAE-5.02-Tasko/docs')
 
-project = 'SAE5.02-Tasko'
-copyright = '2023, Martin Baumgaertner - Mikhaïl Karapetyan - Louis Pluviose - Nicolas Wagner - Thomas Strub - Victor Uettwiller'
-author = 'Martin Baumgaertner - Mikhaïl Karapetyan - Louis Pluviose - Nicolas Wagner - Thomas Strub - Victor Uettwiller'
-release = '0.0.1'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['sphinx.ext.autodoc']
+extensions = ['sphinx.ext.autodoc', 'sphinx.ext.napoleon', 'sphinx.ext.todo']
+
+
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+
+html_title = 'Documentation Tasko'
+html_short_title = 'Tasko'
+
+html_footer = 'Copyright © 2023 Martin Baumgaertner'
+
 
 
 
