@@ -14,11 +14,11 @@ class RequestList:
         return f"SELECT * FROM TASK WHERE id = '{task_id}'"
 
     @staticmethod
-    def get_all_tasks():
+    def get_all_tasks():  # We define a method to get all tasks
         return f"SELECT * FROM TASK"
 
     @staticmethod
-    def get_task_name(task_name):
+    def get_task_name(task_name):  # We define a method to get a task
         return f"SELECT * FROM TASK WHERE name = '{task_name}'"
 
     @staticmethod
@@ -42,12 +42,26 @@ class RequestList:
         return f"SELECT * FROM STATE WHERE id = '{state_id}'"
 
     @staticmethod
-    def get_date_task(task_id):
+    def get_task_due_date(task_id):  # We define a method to get a date in a task
         return f"SELECT due_date FROM TASK WHERE id = '{task_id}'"
 
     @staticmethod
-    def get_date_subtask(subtask_id):
+    def get_subtask_due_date(
+        subtask_id,
+    ):  # We define a method to get a date in a subtask
         return f"SELECT due_date FROM SUBTASK WHERE id = '{subtask_id}'"
+
+    @staticmethod
+    def get_project(project_id):  # We define a method to get a project
+        return f"SELECT * FROM PROJECT WHERE id = '{project_id}'"
+
+    @staticmethod
+    def get_user_project(user_id):  # We define a method to get a project in a user
+        return f"SELECT * FROM PROJECT_USER WHERE user_id = '{user_id}'"
+
+    @staticmethod
+    def get_project_task(project_id):  # We define a method to get a task in a project
+        return f"SELECT * FROM PROJECT_TASK WHERE project_id = '{project_id}'"
 
     # SETTER
     # The setter are used to add a new element to the database
@@ -57,9 +71,28 @@ class RequestList:
 
     @staticmethod
     def add_task(
-        name, description, priority_id, flag_id, user_id, state_id, subtask_id, due_date
+        name, description, priority_id, flag_id, user_id, state_id, due_date, project_id
     ):  # We define a method to add a task
-        return f"INSERT INTO TASK (name, description, priority_id, flag_id, user_id, state_id, subtask_id, due_date) VALUES ('{name}', '{description}', '{priority_id}', '{flag_id}', '{user_id}', '{state_id}', '{subtask_id}', '{due_date}')"
+        query = """
+                INSERT INTO TASK (name, description, priority_id, flag_id, user_id, state_id, due_date, project_id)
+                VALUES (%s, %s, %s, %s, %s, %s, %s, %s);
+        """
+
+        data = (
+            name,
+            description,
+            priority_id,
+            flag_id,
+            user_id,
+            state_id,
+            due_date,
+            project_id,
+        )
+
+        # Include a placeholder for the newly inserted task's ID
+        query += "SET @task_id = LAST_INSERT_ID();"
+
+        return query, data
 
     @staticmethod
     def add_subtask(
@@ -69,12 +102,17 @@ class RequestList:
             INSERT INTO SUBTASK (name, description, state_id, flag_id, user_id, priority_id, due_date)
             VALUES (%s, %s, %s, %s, %s, %s, %s);
         """
+
         data = (name, description, state_id, flag_id, user_id, priority_id, due_date)
 
         # Include a placeholder for the newly inserted subtask's ID
         query += "SET @subtask_id = LAST_INSERT_ID();"
 
         return query, data
+
+    @staticmethod
+    def add_project(name, description, user_id):  # We define a method to add a project
+        return f"INSERT INTO PROJECT (name, description, user_id) VALUES ('{name}', '{description}', '{user_id}')"
 
     @staticmethod
     def add_flag(name, color):  # We define a method to add a flag
@@ -115,6 +153,12 @@ class RequestList:
         return f"UPDATE USER SET mail = '{mail}', password = '{password}', name = '{name}', rights_id = '{rights_id}' WHERE id = '{id}'"
 
     @staticmethod
+    def update_project(
+        id, name, description, user_id
+    ):  # We define a method to update a project
+        return f"UPDATE PROJECT SET name = '{name}', description = '{description}', user_id = '{user_id}' WHERE id = '{id}'"
+
+    @staticmethod
     def update_task(
         id, name, description, priority_id, flag_id, user_id, state_id, subtask_id
     ):  # We define a method to update a task
@@ -139,11 +183,13 @@ class RequestList:
         return f"UPDATE STATE SET name = '{name}' WHERE id = '{id}'"
 
     @staticmethod
-    def update_date_task(id, due_date):
+    def update_date_task(id, due_date):  # We define a method to update a date in a task
         return f"UPDATE TASK SET due_date = '{due_date}' WHERE id = '{id}'"
 
     @staticmethod
-    def update_date_subtask(id, due_date):
+    def update_date_subtask(
+        id, due_date
+    ):  # We define a method to update a date in a subtask
         return f"UPDATE SUBTASK SET due_date = '{due_date}' WHERE id = '{id}'"
 
     @staticmethod
@@ -217,7 +263,7 @@ class RequestList:
         return f"SELECT FLAG.id, FLAG.name FROM FLAG INNER JOIN TASK ON FLAG.id = TASK.flag_id WHERE TASK.id = '{task_id}'"
 
     @staticmethod
-    def get_state_in_task(task_id):
+    def get_state_in_task(task_id):  # We define a method to get the state in a task
         return f"SELECT STATE.id, STATE.name FROM STATE INNER JOIN TASK ON STATE.id = TASK.state_id WHERE TASK.id = '{task_id}'"
 
     @staticmethod
@@ -239,7 +285,57 @@ class RequestList:
         return f"SELECT STATE.id, STATE.name FROM STATE INNER JOIN SUBTASK ON STATE.id = SUBTASK.state_id WHERE SUBTASK.id = '{subtask_id}'"
 
     @staticmethod
-    def check_password_match(username, password):
+    def check_password_match(
+        username, password
+    ):  # We define a method to check if the password match
         return (
             f"SELECT * FROM USER WHERE name = '{username}' AND password = '{password}'"
         )
+
+    @staticmethod
+    def get_user_in_project(project_id):
+        return f"SELECT USER.id, USER.name FROM USER INNER JOIN PROJECT_USER ON USER.id = PROJECT_USER.user_id WHERE PROJECT_USER.project_id = '{project_id}'"
+
+    # SEARCH
+    # All of the search requests we need are stored here
+    @staticmethod
+    def search_user(username):  # We define a method to search a user
+        return f"SELECT * FROM USER WHERE name LIKE '%{username}%'"
+
+    @staticmethod
+    def search_task(asker_id):  # We define a method to search a task
+        return f"SELECT TASK.name FROM TASK WHERE TASK.id IN (SELECT task_id FROM TASK_USER WHERE user_id = '{asker_id}');"
+
+    @staticmethod
+    def search_subtask(subtaskname):  # We define a method to search a subtask
+        return f"SELECT * FROM SUBTASK WHERE name LIKE '%{subtaskname}%'"
+
+    @staticmethod
+    def search_task_by_name_and_state(
+        task_name, state_id
+    ):  # We define a method to search a task by name and state
+        return f"SELECT * FROM TASK WHERE name LIKE '%{task_name}%' AND state_id = '{state_id}'"
+
+    @staticmethod
+    def search_task_by_priority_and_user(
+        priority_id, user_id
+    ):  # We define a method to search a task by priority and user
+        return f"SELECT * FROM TASK WHERE priority_id = '{priority_id}' AND user_id = '{user_id}'"
+
+    @staticmethod
+    def search_task_by_flag_and_due_date(
+        flag_id, due_date
+    ):  # We define a method to search a task by flag and due date
+        return f"SELECT * FROM TASK WHERE flag_id = '{flag_id}' AND due_date = '{due_date}'"
+
+    @staticmethod
+    def search_subtask_by_name_and_user(
+        subtask_name, user_id
+    ):  # We define a method to search a subtask by name and user
+        return f"SELECT * FROM SUBTASK WHERE name LIKE '%{subtask_name}%' AND user_id = '{user_id}'"
+
+    @staticmethod
+    def search_project_by_name_and_description(
+        project_name, project_description
+    ):  # We define a method to search a project by name and description
+        return f"SELECT * FROM PROJECT WHERE name LIKE '%{project_name}%' AND description LIKE '%{project_description}%'"
