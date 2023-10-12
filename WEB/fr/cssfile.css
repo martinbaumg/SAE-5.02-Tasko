@@ -62,6 +62,7 @@ header {
     top: 100%; 
     left: 0;
     flex-direction: row;
+    padding: 0%;
 }
 .navbar > ul > li:hover .under-menu-under{
     display: block;
@@ -73,6 +74,7 @@ header {
 }
 .under-menu-under a{
     padding: 10px;
+    padding-left: 0%;
     border-bottom: none;
 }
 .under-menu-under a:hover{
@@ -321,7 +323,7 @@ footer {
 
     .navbar {
         flex-direction: column;
-        align-items: flex-start, center;
+        align-items: flex-start;
         width: 100%;
     }
 
@@ -331,12 +333,13 @@ footer {
 
     .under-menu-under {
         display: none; 
+        padding: 0%;
     }
 
 
     .navbar ul li:hover .under-menu-under {
         display: block; 
-        align-items: flex-start, center;
+        align-items: flex-start;
     }
 
     .titre1-text-app{
@@ -509,9 +512,12 @@ footer {
         width: 100%;
     }
 
+    .text-app{
+        margin-left: 5%;
+    }
     .navbar {
         flex-direction: column;
-        align-items: flex-start, center; /
+        align-items: flex-start;
     }
 
     .under-menu {
@@ -520,17 +526,20 @@ footer {
 
     .under-menu-under {
         display: none; 
+        padding: 0%;
     }
 
 
     .navbar ul li:hover .under-menu-under {
         display: block; 
-        align-items: flex-start, center;
+        align-items: flex-start;
     }
 
     .titre1-text-app{
         margin: 0%;
         margin-top: 10%;
+        width: 100%;
+        font-size: 2em;
     }
 
     .links{
@@ -546,7 +555,7 @@ footer {
     }
 
     .carac-princi{
-        width: 90%;
+        width: 100%;
         margin: 0%;
     }
 
@@ -558,7 +567,7 @@ footer {
     }
     
     .li1{
-        font-size: 1.5em;
+        font-size: 1.2em;
         width: auto;
         margin: 0%;
         margin-top: 8%;
@@ -573,7 +582,7 @@ footer {
     }
     
     .li2{
-        font-size: 1.5em;
+        font-size: 1.2em;
         width: auto;
         margin: 0%;
         margin-top: 8%;
@@ -587,7 +596,7 @@ footer {
     }
     
     .li3{
-        font-size: 1.5em;
+        font-size: 1.2em;
         width: auto;
         margin: 0%;
         margin-top: 8%;
@@ -601,7 +610,7 @@ footer {
     }
     
     .li4{
-        font-size: 1.5em;
+        font-size: 1.2em;
         width: auto;
         margin: 0%;
         margin-top: 8%;
@@ -615,21 +624,21 @@ footer {
     }
     
     .li5{
-        font-size: 1.5em;
+        font-size: 1.2em;
         width: auto;
         margin: 0%;
         margin-top: 8%;
     }
     
     .paragraphe-li5{
-        font-size: 1.25em;
+        font-size: 1.0em;
         width: auto;
         margin: 0%;  
         margin-top: 2%;
     }
     
     .li6{
-        font-size: 1.5em;
+        font-size: 1.2em;
         width: auto;
         margin: 0%;
         margin-top: 8%;
@@ -643,7 +652,7 @@ footer {
     }
     
     .li7{
-        font-size: 1.5em;
+        font-size: 1.2em;
         width: auto;
         margin: 0%;
         margin-top: 8%;
@@ -659,11 +668,9 @@ footer {
     .p2-text-app{
         font-size: 1.2em;
         width: 100%;
-        margin-left: 5%;
-        margin-right: 5%;
+        margin: 5%;
     }
 }
-
 
 @media screen and (min-width: 961px) {
 
@@ -675,7 +682,7 @@ footer {
 
     .navbar {
         flex-direction: column;
-        align-items: flex-start, center; /
+        align-items: flex-start; /
     }
 
     .under-menu {
@@ -684,16 +691,20 @@ footer {
 
     .under-menu-under {
         display: none; 
+        padding: 0%;
     }
 
 
     .navbar ul li:hover .under-menu-under {
         display: block; 
-        align-items: flex-start, center;
+        align-items: flex-start,;
     }
 
     .titre1-text-app{
-        margin-top: 10%;
+        margin-top: 5%;
+        font-size: 2.5em;
+        margin-left: 2%;
+        width: 95%;
     }
 
     .links{
@@ -702,21 +713,27 @@ footer {
 
     }
 
-    .p1-text-app{
-        width: 100%;
+    .text-app{
         margin-left: 0%;
+        width: 100%;
+    }
+
+    .p1-text-app{
+        width: 90%;
+        margin-left: 5%;
+        font-size: 1.5em;
     }
 
     .carac-princi{
-        width: 90%;
-        margin: 0%;
+        width: 80%;
+        margin-left: 5%;
     }
 
     .titre2-text-app{
         font-size: 1.75em;
         font-weight: bold;
         text-align: left;
-        margin-left: auto;
+        margin-left: 5%;
     }
     
     .li1{
@@ -820,7 +837,353 @@ footer {
 
     .p2-text-app{
         font-size: 1.5em;
-        width: 100%;
-        margin-left: 0%;
+        width: 96%;
+        margin-left: 2%;
     }
 }
+
+@media screen and (min-width: 1025px) {
+
+    .body{
+        flex-direction: column;
+        margin: auto;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start; /
+    }
+
+    .under-menu {
+        width: 100%;
+    }
+
+    .under-menu-under {
+        display: none; 
+        padding: 0%;
+    }
+
+
+    .navbar ul li:hover .under-menu-under {
+        display: block; 
+        align-items: flex-start,;
+    }
+
+    .titre1-text-app{
+        margin-top: 5%;
+        font-size: 2.5em;
+        margin-left: 2%;
+        width: 95%;
+    }
+
+    .links{
+        margin: 0%;
+        width: auto;
+
+    }
+
+    .text-app{
+        margin-left: 0%;
+        width: 100%;
+    }
+
+    .p1-text-app{
+        width: 90%;
+        margin-left: 5%;
+        font-size: 1.5em;
+    }
+
+    .carac-princi{
+        width: 80%;
+        margin-left: 5%;
+    }
+
+    .titre2-text-app{
+        font-size: 1.75em;
+        font-weight: bold;
+        text-align: left;
+        margin-left: 5%;
+    }
+    
+    .li1{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+
+    }
+    
+    .paragraphe-li1{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+    
+    .li2{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+    }
+    
+    .paragraphe-li2{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+    
+    .li3{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+    }
+    
+    .paragraphe-li3{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+    
+    .li4{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+    }
+    
+    .paragraphe-li4{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+    
+    .li5{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+    }
+    
+    .paragraphe-li5{
+        font-size: 1.25em;
+        width: auto;
+        margin: 0%;  
+        margin-top: 2%;
+    }
+    
+    .li6{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+    }
+    
+    .paragraphe-li6{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+    
+    .li7{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+    }
+    
+    .paragraphe-li7{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+
+    .p2-text-app{
+        font-size: 1.5em;
+        width: 96%;
+        margin-left: 2%;
+    }
+}
+
+@media screen and (min-width: 1281px) {
+
+    .body{
+        flex-direction: column;
+        margin: auto;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start; /
+    }
+
+    .under-menu {
+        width: 100%;
+    }
+
+    .under-menu-under {
+        display: none; 
+        padding: 0%;
+    }
+
+
+    .navbar ul li:hover .under-menu-under {
+        display: block; 
+        align-items: flex-start,;
+    }
+
+    .titre1-text-app{
+        margin-top: 5%;
+        font-size: 3em;
+        margin-left: 2%;
+        width: 95%;
+    }
+
+    .links{
+        margin: 0%;
+        width: auto;
+
+    }
+
+    .text-app{
+        margin-left: 0%;
+        width: 100%;
+    }
+
+    .p1-text-app{
+        width: 90%;
+        margin-left: 5%;
+        font-size: 1.5em;
+    }
+
+    .carac-princi{
+        width: 80%;
+        margin-left: 5%;
+    }
+
+    .titre2-text-app{
+        font-size: 1.75em;
+        font-weight: bold;
+        text-align: left;
+        margin-left: 5%;
+    }
+    
+    .li1{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+
+    }
+    
+    .paragraphe-li1{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+    
+    .li2{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+    }
+    
+    .paragraphe-li2{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+    
+    .li3{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+    }
+    
+    .paragraphe-li3{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+    
+    .li4{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+    }
+    
+    .paragraphe-li4{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+    
+    .li5{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+    }
+    
+    .paragraphe-li5{
+        font-size: 1.25em;
+        width: auto;
+        margin: 0%;  
+        margin-top: 2%;
+    }
+    
+    .li6{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+    }
+    
+    .paragraphe-li6{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+    
+    .li7{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+    }
+    
+    .paragraphe-li7{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+
+    .p2-text-app{
+        font-size: 1.5em;
+        width: 96%;
+        margin-left: 2%;
+    }
+}
+
+/*Mettre le logo de manière clean car problème avec le fichier de base (index.html)
+ne pas oublier de gérer correctement la nav bar après le changement de logo
+faire encore le responsive pour les deux derniers résolutions
+Finir la page index et a propos puis faire leur reponsive.
+Chercher comment faire un système de dépose de commentaire */
