@@ -42,12 +42,51 @@ def test_get_task(db_connection):
     db_connection.connection.commit()  # Commit the changes to the database
 
 
+def test_get_all_tasks(db_connection):
+    # Specify the task_id you want to query
+    task_id = 1  # Change this to the desired task_id
+
+    # Create a query using the get_task method from RequestList
+    query = RequestList.get_all_tasks()
+
+    # Execute the query using the execute_query method
+    db_connection.execute_query(query)
+
+    db_connection.connection.commit()  # Commit the changes to the database
+
+
+def test_get_task_name(db_connection):
+    # Specify the task_id you want to query
+    task_name = "testtask"  # Change this to the desired task_id
+
+    # Create a query using the get_task method from RequestList
+    query = RequestList.get_task_name(task_name)
+
+    # Execute the query using the execute_query method
+    db_connection.execute_query(query)
+
+    db_connection.connection.commit()  # Commit the changes to the database
+
+
 def test_get_subtask(db_connection):
     # Specify the subtask_id you want to query
     subtask_id = 1  # Change this to the desired subtask_id
 
     # Create a query using the get_subtask method from RequestList
     query = RequestList.get_subtask(subtask_id)
+
+    # Execute the query using the execute_query method
+    db_connection.execute_query(query)
+
+    db_connection.connection.commit()  # Commit the changes to the database
+
+
+def test_get_subtask_name(db_connection):
+    # Specify the subtask_id you want to query
+    subtask_name = "subtasktest"  # Change this to the desired subtask_id
+
+    # Create a query using the get_subtask method from RequestList
+    query = RequestList.get_subtask_name(subtask_name)
 
     # Execute the query using the execute_query method
     db_connection.execute_query(query)
@@ -94,6 +133,71 @@ def test_get_state(db_connection):
     db_connection.connection.commit()  # Commit the changes to the database
 
 
+def test_get_task_due_date(db_connection):
+    # Specify the state_id you want to query
+    task_id = 20  # Change this to the desired state_id
+
+    # Create a query using the get_state method from RequestList
+    query = RequestList.get_task_due_date(task_id)
+
+    # Execute the query using the execute_query method
+    db_connection.execute_query(query)
+
+    db_connection.connection.commit()  # Commit the changes to the database
+
+
+def test_get_subtask_due_date(db_connection):
+    # Specify the state_id you want to query
+    subtask_id = 20  # Change this to the desired state_id
+
+    # Create a query using the get_state method from RequestList
+    query = RequestList.get_subtask_due_date(subtask_id)
+
+    # Execute the query using the execute_query method
+    db_connection.execute_query(query)
+
+    db_connection.connection.commit()  # Commit the changes to the database
+
+
+def test_get_project(db_connection):
+    # Specify the project_id you want to query
+    project_id = 1  # Change this to the desired project_id
+
+    # Create a query using the get_project method from RequestList
+    query = RequestList.get_project(project_id)
+
+    # Execute the query using the execute_query method
+    db_connection.execute_query(query)
+
+    db_connection.connection.commit()  # Commit the changes to the database
+
+
+def test_get_user_project(db_connection):
+    # Specify the user_id you want to query
+    user_id = 1  # Change this to the desired user_id
+
+    # Create a query using the get_user_project method from RequestList
+    query = RequestList.get_user_project(user_id)
+
+    # Execute the query using the execute_query method
+    db_connection.execute_query(query)
+
+    db_connection.connection.commit()  # Commit the changes to the database
+
+
+def test_get_project_task(db_connection):
+    # Specify the project_id you want to query
+    project_id = 1  # Change this to the desired project_id
+
+    # Create a query using the get_project_task method from RequestList
+    query = RequestList.get_project_task(project_id)
+
+    # Execute the query using the execute_query method
+    db_connection.execute_query(query)
+
+    db_connection.connection.commit()  # Commit the changes to the database
+
+
 def test_add_user(db_connection):
     # Specify the user information
     mail = "john@pytest.com"
@@ -119,10 +223,11 @@ def test_add_task(db_connection):
     user_id = 1  # Replace with the actual user_id
     state_id = 1  # Replace with the actual state_id
     subtask_id = 1  # Replace with the actual subtask_id
+    due_date = "2021-01-01"  # Replace with the actual due_date
 
     # Create a query using the add_task method from RequestList
     query = RequestList.add_task(
-        name, description, priority_id, flag_id, user_id, state_id, subtask_id
+        name, description, priority_id, flag_id, user_id, state_id, subtask_id, due_date
     )
 
     # Execute the query using the execute_query method
@@ -186,6 +291,21 @@ def test_add_subtask(db_connection):
         print(f"An error occurred: {e}")
 
     db.disconnect()  # Disconnect from the database
+
+
+def test_add_project(db_connection):
+    # Specify the project information
+    name = "New Project"
+    description = "Description of the project"
+    user_id = 1  # Replace with the actual user_id
+
+    # Create a query using the add_project method from RequestList
+    query = RequestList.add_project(name, description, user_id)
+
+    # Execute the query using the execute_query method
+    db_connection.execute_query(query)
+
+    db_connection.connection.commit()  # Commit the changes to the database
 
 
 def test_add_flag(db_connection):
@@ -287,6 +407,22 @@ def test_update_user(db_connection):
     db_connection.connection.commit()  # Commit the changes to the database
 
 
+def test_update_project(db_connection):
+    # Specify the project information
+    id = 1  # Replace with the actual id
+    name = "New Project Updated"
+    description = "Description of the project Updated"
+    user_id = 1  # Replace with the actual user_id
+
+    # Create a query using the update_project method from RequestList
+    query = RequestList.update_project(id, name, description, user_id)
+
+    # Execute the query using the execute_query method
+    db_connection.execute_query(query)
+
+    db_connection.connection.commit()  # Commit the changes to the database
+
+
 def test_update_task(db_connection):
     # Specify the task information
     id = 4  # Replace with the actual id
@@ -366,6 +502,34 @@ def test_update_state(db_connection):
 
     # Create a query using the update_state method from RequestList
     query = RequestList.update_state(id, name)
+
+    # Execute the query using the execute_query method
+    db_connection.execute_query(query)
+
+    db_connection.connection.commit()  # Commit the changes to the database
+
+
+def test_update_date_task(db_connection):
+    # Specify the state information
+    id = 6  # Replace with the actual id
+    date = "2023-01-01"
+
+    # Create a query using the update_state method from RequestList
+    query = RequestList.update_date_task(id, date)
+
+    # Execute the query using the execute_query method
+    db_connection.execute_query(query)
+
+    db_connection.connection.commit()  # Commit the changes to the database
+
+
+def test_update_date_subtask(db_connection):
+    # Specify the state information
+    id = 6  # Replace with the actual id
+    date = "2023-01-01"
+
+    # Create a query using the update_state method from RequestList
+    query = RequestList.update_date_subtask(id, date)
 
     # Execute the query using the execute_query method
     db_connection.execute_query(query)
@@ -538,6 +702,132 @@ def test_get_user_in_subtask(db_connection):
 
     # Create a query using the get_user_in_subtask method from RequestList
     query = RequestList.get_user_in_subtask(subtask_id)
+
+    # Execute the query using the execute_query method
+    db_connection.execute_query(query)
+
+    db_connection.connection.commit()  # Commit the changes to the database
+
+
+def test_get_user_in_project(db_connection):
+    # Specify the project_id you want to query
+    project_id = 1  # Change this to the desired project_id
+
+    # Create a query using the get_user_in_project method from RequestList
+    query = RequestList.get_user_in_project(project_id)
+
+    # Execute the query using the execute_query method
+    db_connection.execute_query(query)
+
+    db_connection.connection.commit()  # Commit the changes to the database
+
+
+def test_search_user(db_connection):
+    # Specify the user information
+    name = "louis"  # Replace with the actual name
+
+    # Create a query using the search_user method from RequestList
+    query = RequestList.search_user(name)
+
+    # Execute the query using the execute_query method
+    db_connection.execute_query(query)
+
+    db_connection.connection.commit()  # Commit the changes to the database
+
+
+def test_search_task(db_connection):
+    # Specify the task information
+    name = "testtask"  # Replace with the actual name
+
+    # Create a query using the search_task method from RequestList
+    query = RequestList.search_task(name)
+
+    # Execute the query using the execute_query method
+    db_connection.execute_query(query)
+
+    db_connection.connection.commit()  # Commit the changes to the database
+
+
+def test_search_subtask(db_connection):
+    # Specify the subtask information
+    name = "subtasktest"  # Replace with the actual name
+
+    # Create a query using the search_subtask method from RequestList
+    query = RequestList.search_subtask(name)
+
+    # Execute the query using the execute_query method
+    db_connection.execute_query(query)
+
+    db_connection.connection.commit()  # Commit the changes to the database
+
+
+def test_search_task_by_name_and_state(db_connection):
+    # Search for a task by name and state
+    task_name = "testtask"  # Replace with the actual name
+    state_id = 1  # Replace with the actual state_id
+
+    # Create a query using the search_task_by_name_and_state method from RequestList
+    query = RequestList.search_task_by_name_and_state(task_name, state_id)
+
+    # Execute the query using the execute_query method
+    db_connection.execute_query(query)
+
+    db_connection.connection.commit()  # Commit the changes to the database
+
+
+def test_seartch_task_by_priority_and_user(db_connection):
+    # Search for a task by priority and user
+    priority_id = 1  # Replace with the actual priority_id
+    user_id = 1  # Replace with the actual user_id
+
+    # Create a query using the search_task_by_priority_and_user method from RequestList
+    query = RequestList.search_task_by_priority_and_user(priority_id, user_id)
+
+    # Execute the query using the execute_query method
+    db_connection.execute_query(query)
+
+    db_connection.connection.commit()  # Commit the changes to the database
+
+
+def test_search_task_by_flag_and_due_date(db_connection):
+    # Search for a task by flag and due date
+    flag_id = 1  # Replace with the actual flag_id
+    due_date = "2021-01-01"  # Replace with the actual due_date
+
+    # Create a query using the search_task_by_flag_and_due_date method from RequestList
+    query = RequestList.search_task_by_flag_and_due_date(flag_id, due_date)
+
+    # Execute the query using the execute_query method
+    db_connection.execute_query(query)
+
+    db_connection.connection.commit()  # Commit the changes to the database
+
+
+def test_search_subtask_by_name_and_user(db_connection):
+    # Search for a subtask by name and user
+    subtask_name = "subtasktest"  # Replace with the actual name
+    user_id = 1  # Replace with the actual user_id
+
+    # Create a query using the search_subtask_by_name_and_user method from RequestList
+    query = RequestList.search_subtask_by_name_and_user(subtask_name, user_id)
+
+    # Execute the query using the execute_query method
+    db_connection.execute_query(query)
+
+    db_connection.connection.commit()  # Commit the changes to the database
+
+
+def test_search_project_by_name_and_description(db_connection):
+    # Search for a project by name and description
+    project_name = "testproject"  # Replace with the actual name
+    project_description = (
+        "Description of the project"  # Replace with the actual description
+    )
+
+    # Create a query using the search_project_by_name_and_description method from RequestList
+    query = RequestList.search_project_by_name_and_description(
+        project_name, project_description
+    )
 
     # Execute the query using the execute_query method
     db_connection.execute_query(query)
