@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import NavBar from './components/NavBar';
 import Separator from './components/Separator';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ToDoList from './components/toDoList';
+
 
 import { eel } from './eel.js';
 
@@ -19,6 +21,7 @@ class App extends Component {
           <NavBar />
           <h1 className="listName">List Name</h1>
           <Separator />
+          <ToDoList />
           <Routes>
             <Route path="/" />
           </Routes>
