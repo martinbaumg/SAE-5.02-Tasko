@@ -1,25 +1,184 @@
-.input {
-
+.to-do-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.addButton {
+.to-do-list__title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
-.deleteButton {
+.to-do-list__form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
 }
 
-.checkbox {
+.to-do-list__input {
+  margin-right: 1rem;
+  padding: 0.5rem;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease-in-out;
 }
 
-.checklist {
-    display: flex;
-    align-items: center;
+.to-do-list__input:focus {
+  outline: none;
+  border-color: #0077ff;
 }
 
-.checkli {
-    display: flex;
+.to-do-list__button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease-in-out;
 }
 
+.to-do-list__button:hover {
+  background-color: #0077ff;
+}
 
-.tasks { 
+.to-do-list__checklist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.to-do-list__checklist-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.to-do-list__checklist-item--completed {
+  animation: fadeOut 0.5s ease-in-out forwards;
+}
+
+.to-do-list__checklist-item-checkbox {
+  margin-right: 10px;
+}
+
+.to-do-list__checklist-item-text {
+  font-size: 18px;
+  font-weight: 500;
+  flex-grow: 1;
+  margin-right: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.to-do-list__checklist-item-text--completed {
+  text-decoration: line-through;
+  color: #999;
+}
+.to-do-list__button--delete {
+  background-color: red;
+  margin-left: auto;
+  transition: background-color 0.3s ease-in-out;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.to-do-list__button--delete:hover {
+  background-color: #c0392b;
+}
+
+.to-do-list__button--delete:focus {
+  outline: none;
+}
+
+.to-do-list__checklist-item:last-child {
+  border-bottom: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.to-do-list__modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.to-do-list__modal-overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.to-do-list__modal {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  max-width: 500px;
+  width: 100%;
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: all 0.3s ease-in-out;
+}
+
+.to-do-list__modal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.to-do-list__modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.to-do-list__modal-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.to-do-list__modal-input {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.to-do-list__modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }

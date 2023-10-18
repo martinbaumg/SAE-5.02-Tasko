@@ -1,49 +1,91 @@
-import React, { useState } from 'react'; 
+import React, { useState } from 'react';
 import './toDoList.css';
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const ToDoList = () => {
-    const [todos, setTodos] = useState ([]);
-    const [newTodo, setNewTodo] = useState("");
+  const [todos, setTodos] = useState([]);
+  const [showModal, setShowModal] = useState(false);
+  const [newTodo, setNewTodo] = useState('');
 
-    const handelAddTodo = () => {
-        if (newTodo.trim() !== "") {
-            setTodos([...todos, {text: newTodo.trim(), checked: false }]);
-            setNewTodo("");
-        }
+  const handleAddTodo = () => {
+    if (newTodo.trim() !== '') {
+      setTodos([...todos, { text: newTodo.trim(), checked: false }]);
+      setNewTodo('');
+      setShowModal(false);
     }
-    
-    const handelDeleteTodo = (index) => {
-        const newTodos = [...todos];
-        newTodos.splice(index, 1);
-        setTodos(newTodos);
-    };
+  };
 
-    const handelToggleTodo = (index) => {
-       const newTodos = [...todos];
-       newTodos[index].checked = !newTodos[index].checked;
-       setTodos(newTodos);
-    };
+  const handleDeleteTodo = (index) => {
+    const newTodos = [...todos];
+    newTodos.splice(index, 1);
+    setTodos(newTodos);
+  };
 
-    return ( 
-        <div>
-            <input className="input" type="text" value={newTodo} onChange={(e) => setNewTodo(e.target.value)}/>
-            <button className="addButton" onClick={handelAddTodo}>Add</button>
-            <ul>
-                {todos.map((todo, index) => (
-                    <li className="checkli" key={index}>
-                    <div className="checklist">
+  const handleToggleTodo = (index) => {
+    const newTodos = [...todos];
+    newTodos[index].checked = !newTodos[index].checked;
+    setTodos(newTodos);
+  };
 
-                    <input type="checkbox" checked={todo.checked} onChange={() => handelToggleTodo(index)}/>
-                    <span className="tasks" style={{ textDecoration: todo.checked ? "line-through" : "none" }} >{todo.text}</span>
-                    <button classname="deleteButton" onClick={() => handelDeleteTodo(index)}>
-                         Delete
-                    </button>   
-                    </div>
-                   </li>
-                ))}
-            </ul>
+  return (
+    <div className="to-do-list">
+      <h1 className="to-do-list__title">To-Do List</h1>
+      <button className="to-do-list__button" onClick={() => setShowModal(true)}>
+        Add Task
+      </button>
+      <ul className="to-do-list__checklist">
+        {todos.map((todo, index) => (
+          <li className="to-do-list__checklist-item" key={index}>
+            <input
+              className="to-do-list__checklist-item-checkbox"
+              type="checkbox"
+              checked={todo.checked}
+              onChange={() => handleToggleTodo(index)}
+            />
+            <span
+              className={`to-do-list__checklist-item-text ${
+                todo.checked ? 'to-do-list__checklist-item-text--completed' : ''
+              }`}
+            >
+              {todo.text}
+            </span>
+            <button
+              className="to-do-list__button to-do-list__button--delete"
+              onClick={() => handleDeleteTodo(index)}
+            >
+              <FontAwesomeIcon icon={faTrash} />
+            </button>
+          </li>
+        ))}
+      </ul>
+      <div className={`to-do-list__modal-overlay ${showModal ? 'show' : ''}`}>
+        <div className={`to-do-list__modal ${showModal ? 'show' : ''}`}>
+          <div className="to-do-list__modal-content">
+            <h2 className="to-do-list__modal-title">Add a New Task</h2>
+            <input
+              className="to-do-list__modal-input"
+              type="text"
+              placeholder="Enter task description"
+              value={newTodo}
+              onChange={(e) => setNewTodo(e.target.value)}
+            />
+            <div className="to-do-list__modal-buttons">
+              <button
+                className="to-do-list__button"
+                onClick={() => setShowModal(false)}
+              >
+                Cancel
+              </button>
+              <button className="to-do-list__button" onClick={handleAddTodo}>
+                Add
+              </button>
+            </div>
+          </div>
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
-export default ToDoList; 
+export default ToDoList;
