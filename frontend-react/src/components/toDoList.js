@@ -3,7 +3,7 @@ import './toDoList.css';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const ToDoList = () => {
+const ToDoList = ({ onAddTodo }) => {
   const [todos, setTodos] = useState([]);
   const [showModal, setShowModal] = useState(false);
   const [newTodo, setNewTodo] = useState('');
@@ -13,6 +13,7 @@ const ToDoList = () => {
       setTodos([...todos, { text: newTodo.trim(), checked: false }]);
       setNewTodo('');
       setShowModal(false);
+      onAddTodo(newTodo.trim());
     }
   };
 
