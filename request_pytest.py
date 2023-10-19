@@ -198,7 +198,7 @@ def test_get_project_task(db_connection):
     db_connection.connection.commit()  # Commit the changes to the database
 
 
-def test_add_user(db_connection):
+def test_add_user_secure(db_connection):
     # Specify the user information
     mail = "john@pytest.com"
     password = "password"
@@ -206,7 +206,7 @@ def test_add_user(db_connection):
     rights_id = 1  # Replace with the actual rights_id
 
     # Create a query using the add_user method from RequestList
-    query = RequestList.add_user(mail, password, name, rights_id)
+    query = RequestList.add_user_secure(mail, password, name, rights_id)
 
     # Execute the query using the execute_query method
     db_connection.execute_query(query)

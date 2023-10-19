@@ -1,3 +1,5 @@
+import bcrypt
+
 # this file contains the list of requests that are sent to the server
 # they are stored as objects
 
@@ -66,8 +68,24 @@ class RequestList:
     # SETTER
     # The setter are used to add a new element to the database
     @staticmethod
-    def add_user(mail, password, name, rights_id):  # We define a method to add a user
-        return f"INSERT INTO USER (mail, password, name, rights_id) VALUES ('{mail}', '{password}', '{name}', '{rights_id}')"
+    def add_user_secure(mail, password, name, rights_id):
+        # Générer un sel
+        salt = bcrypt.gensalt()
+
+        # Hacher le mot de passe avec le sel
+        hashed_password = bcrypt.hashpw(password.encode("utf-8"), salt)
+
+        # Convertir le sel et le mot de passe haché en chaînes de caractères
+        salt_str = salt.decode("utf-8")
+        hashed_password_str = hashed_password.decode("utf-8")
+
+        # Utiliser des paramètres de requête pour éviter les attaques par injection SQL
+        query = "INSERT INTO USER (mail, password, name, rights_id, salt) VALUES (%s, %s, %s, %s, %s)"
+
+        # Passer les valeurs en tant que tuple pour les paramètres de requête
+        values = (mail, hashed_password_str, name, rights_id, salt_str)
+
+        return query, values
 
     @staticmethod
     def add_task(
@@ -285,12 +303,10 @@ class RequestList:
         return f"SELECT STATE.id, STATE.name FROM STATE INNER JOIN SUBTASK ON STATE.id = SUBTASK.state_id WHERE SUBTASK.id = '{subtask_id}'"
 
     @staticmethod
-    def check_password_match(
-        username, password
-    ):  # We define a method to check if the password match
-        return (
-            f"SELECT * FROM USER WHERE name = '{username}' AND password = '{password}'"
-        )
+    def check_password_match(username):
+        query = "SELECT password, salt FROM USER WHERE name = %s"
+        values = (username,)
+        return query, values
 
     @staticmethod
     def get_user_in_project(project_id):
