@@ -304,9 +304,75 @@ footer {
 
 /*css pour la page about*/
 
+.about_us{
+    width: 90%;
+}
+
+.QSN{
+    width: 95%;
+    margin-left: 3%;
+    text-align: justify;
+}
+.pp_texte{
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+}
+.pp {
+    margin-left: 3%;
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+    height: auto;
+  }
+  
+  .img-border-radius {
+    height: 200px;
+    border-radius: 50%;
+  }
+  
+  .img-clip-path {
+    height: 200px;
+  }
+  
+  .img-carree{
+    clip-path:ellipse(50% 50%);
+  }
+
+  .texte{
+    font-size: 1.0em;
+    text-align: justify;
+    width: 65%;
+    margin-left: 10%;
+  }
 
 
-
+  blockquote {
+    position: relative;
+    padding: 40px 70px;
+    margin: 0%;
+  }
+  blockquote p {
+    margin: 0;
+  }
+  blockquote:before {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    font-size: 20px;
+    color: #999;
+  }
+  blockquote:after {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    content: "\f10e";
+    font-family: 'Fontawesome';
+    font-size: 20px;
+    color: #999;
+  }
 
 
 
@@ -501,7 +567,82 @@ footer {
         margin-right: 5%;
         font-weight: bold;
     }
+
+    /*mise en page pour taskoteam*/
+    .about_us{
+        width: 90%;;
+    }
+
+    .QSN{
+        width: 100%;
+        margin-left: 3%;
+        text-align: justify;
+    }
+    .pp_texte{
+        width: 98%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .pp {
+        margin-left: 40%;
+        display: flex;
+        justify-content: column;
+        width: 15%;
+        height: auto;
+    }
+    
+    .img-border-radius {
+        height: 150px;
+        border-radius: 50%;
+    }
+    
+    .img-clip-path {
+        height: 150px;
+    }
+    
+    .img-carree{
+        clip-path:ellipse(50% 50%);
+    }
+
+    .texte{
+        font-size: 1.0em;
+        text-align: justify;
+        width: 100%;
+        margin: 0%;
+        
+    }
+
+
+    blockquote {
+        position: relative;
+        padding: 40px 70px;
+        margin: 0%;
+    }
+    blockquote p {
+        margin: 0;
+    }
+    blockquote:before {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        content: "\f10d";
+        font-family: 'Fontawesome';
+        font-size: 20px;
+        color: #999;
+    }
+    blockquote:after {
+        position: absolute;
+        bottom: 25px;
+        right: 25px;
+        content: "\f10e";
+        font-family: 'Fontawesome';
+        font-size: 20px;
+        color: #999;
+    }   
 }
+
+
 
 /*Dimension for tablette a vertical screen*/ 
 @media screen and (min-width: 641px) {
@@ -669,6 +810,78 @@ footer {
         font-size: 1.2em;
         width: 100%;
         margin: 5%;
+    }
+
+    /*mise en page pour taskoteam*/
+    .about_us{
+        width: 90%;
+    }
+
+    .QSN{
+        width: 95%;
+        margin-left: 3%;
+        text-align: justify;
+    }
+    .pp_texte{
+        width: 98%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .pp {
+        margin-left: 10%;
+        display: flex;
+        justify-content: space-around;
+        width: 15%;
+        height: auto;
+    }
+    
+    .img-border-radius {
+        height: 150px;
+        border-radius: 50%;
+    }
+    
+    .img-clip-path {
+        height: 150px;
+    }
+    
+    .img-carree{
+        clip-path:ellipse(50% 50%);
+    }
+
+    .texte{
+        font-size: 1.0em;
+        text-align: justify;
+        width: 70%;
+        margin: 0%;
+        
+    }
+
+
+    blockquote {
+        position: relative;
+        padding: 40px 70px;
+        margin: 0%;
+    }
+    blockquote p {
+        margin: 0;
+    }
+    blockquote:before {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        content: "\f10d";
+        font-family: 'Fontawesome';
+        font-size: 20px;
+        color: #999;
+    }
+    blockquote:after {
+        position: absolute;
+        bottom: 25px;
+        right: 25px;
+        content: "\f10e";
+        font-family: 'Fontawesome';
+        font-size: 20px;
+        color: #999;
     }
 }
 
@@ -840,8 +1053,78 @@ footer {
         width: 96%;
         margin-left: 2%;
     }
-}
 
+    /*mise en page pour taskoteam*/
+    .about_us{
+        width: 90%;
+    }
+
+    .QSN{
+        width: 95%;
+        margin-left: 3%;
+        text-align: justify;
+    }
+    .pp_texte{
+        width: 98%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .pp {
+        margin-left: 3%;
+        display: flex;
+        justify-content: space-around;
+        width: 20%;
+        height: auto;
+    }
+    
+    .img-border-radius {
+        height: 200px;
+        border-radius: 50%;
+    }
+    
+    .img-clip-path {
+        height: 200px;
+    }
+    
+    .img-carree{
+        clip-path:ellipse(50% 50%);
+    }
+
+    .texte{
+        font-size: 1.0em;
+        text-align: justify;
+        width: 65%;
+        margin-left: 10%;
+    }
+
+
+    blockquote {
+        position: relative;
+        padding: 40px 70px;
+        margin: 0%;
+    }
+    blockquote p {
+        margin: 0;
+    }
+    blockquote:before {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        content: "\f10d";
+        font-family: 'Fontawesome';
+        font-size: 20px;
+        color: #999;
+    }
+    blockquote:after {
+        position: absolute;
+        bottom: 25px;
+        right: 25px;
+        content: "\f10e";
+        font-family: 'Fontawesome';
+        font-size: 20px;
+        color: #999;
+    }
+}
 @media screen and (min-width: 1025px) {
 
     .body{
@@ -1009,6 +1292,77 @@ footer {
         font-size: 1.5em;
         width: 96%;
         margin-left: 2%;
+    }
+
+    /*mise en page pour taskoteam*/
+    .about_us{
+        width: 90%;
+    }
+
+    .QSN{
+        width: 95%;
+        margin-left: 3%;
+        text-align: justify;
+    }
+    .pp_texte{
+        width: 98%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .pp {
+        margin-left: 3%;
+        display: flex;
+        justify-content: space-around;
+        width: 20%;
+        height: auto;
+    }
+    
+    .img-border-radius {
+        height: 200px;
+        border-radius: 50%;
+    }
+    
+    .img-clip-path {
+        height: 200px;
+    }
+    
+    .img-carree{
+        clip-path:ellipse(50% 50%);
+    }
+
+    .texte{
+        font-size: 1.0em;
+        text-align: justify;
+        width: 65%;
+        margin-left: 10%;
+    }
+
+
+    blockquote {
+        position: relative;
+        padding: 40px 70px;
+        margin: 0%;
+    }
+    blockquote p {
+        margin: 0;
+    }
+    blockquote:before {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        content: "\f10d";
+        font-family: 'Fontawesome';
+        font-size: 20px;
+        color: #999;
+    }
+    blockquote:after {
+        position: absolute;
+        bottom: 25px;
+        right: 25px;
+        content: "\f10e";
+        font-family: 'Fontawesome';
+        font-size: 20px;
+        color: #999;
     }
 }
 
@@ -1180,10 +1534,321 @@ footer {
         width: 96%;
         margin-left: 2%;
     }
+
+
+    /*mise en page pour taskoteam*/
+    .about_us{
+        width: 90%;
+    }
+
+    .QSN{
+        width: 95%;
+        margin-left: 3%;
+        text-align: justify;
+    }
+    .pp_texte{
+        width: 98%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .pp {
+        margin-left: 3%;
+        display: flex;
+        justify-content: space-around;
+        width: 20%;
+        height: auto;
+    }
+    
+    .img-border-radius {
+        height: 200px;
+        border-radius: 50%;
+    }
+    
+    .img-clip-path {
+        height: 200px;
+    }
+    
+    .img-carree{
+        clip-path:ellipse(50% 50%);
+    }
+
+    .texte{
+        font-size: 1.0em;
+        text-align: justify;
+        width: 65%;
+        margin-left: 10%;
+    }
+
+
+    blockquote {
+        position: relative;
+        padding: 40px 70px;
+        margin: 0%;
+    }
+    blockquote p {
+        margin: 0;
+    }
+    blockquote:before {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        content: "\f10d";
+        font-family: 'Fontawesome';
+        font-size: 20px;
+        color: #999;
+    }
+    blockquote:after {
+        position: absolute;
+        bottom: 25px;
+        right: 25px;
+        content: "\f10e";
+        font-family: 'Fontawesome';
+        font-size: 20px;
+        color: #999;
+    }
 }
 
-/*Mettre le logo de manière clean car problème avec le fichier de base (index.html)
-ne pas oublier de gérer correctement la nav bar après le changement de logo
-faire encore le responsive pour les deux derniers résolutions
-Finir la page index et a propos puis faire leur reponsive.
-Chercher comment faire un système de dépose de commentaire */
+@media screen and (min-width: 1425px) {
+
+    .body{
+        flex-direction: column;
+        margin: auto;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start; /
+    }
+
+    .under-menu {
+        width: 100%;
+    }
+
+    .under-menu-under {
+        display: none; 
+        padding: 0%;
+    }
+
+
+    .navbar ul li:hover .under-menu-under {
+        display: block; 
+        align-items: flex-start,;
+    }
+
+    .titre1-text-app{
+        margin-top: 5%;
+        font-size: 3em;
+        margin-left: 2%;
+        width: 95%;
+    }
+
+    .links{
+        margin: 0%;
+        width: auto;
+
+    }
+
+    .text-app{
+        margin-left: 0%;
+        width: 100%;
+    }
+
+    .p1-text-app{
+        width: 90%;
+        margin-left: 5%;
+        font-size: 1.5em;
+    }
+
+    .carac-princi{
+        width: 80%;
+        margin-left: 5%;
+    }
+
+    .titre2-text-app{
+        font-size: 1.75em;
+        font-weight: bold;
+        text-align: left;
+        margin-left: 5%;
+    }
+    
+    .li1{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+
+    }
+    
+    .paragraphe-li1{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+    
+    .li2{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+    }
+    
+    .paragraphe-li2{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+    
+    .li3{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+    }
+    
+    .paragraphe-li3{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+    
+    .li4{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+    }
+    
+    .paragraphe-li4{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+    
+    .li5{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+    }
+    
+    .paragraphe-li5{
+        font-size: 1.25em;
+        width: auto;
+        margin: 0%;  
+        margin-top: 2%;
+    }
+    
+    .li6{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+    }
+    
+    .paragraphe-li6{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+    
+    .li7{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+    }
+    
+    .paragraphe-li7{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+
+    .p2-text-app{
+        font-size: 1.5em;
+        width: 96%;
+        margin-left: 2%;
+    }
+
+
+    /*mise en page pour taskoteam*/
+    .about_us{
+        width: 90%;
+    }
+
+    .QSN{
+        width: 95%;
+        margin-left: 3%;
+        text-align: justify;
+    }
+    .pp_texte{
+        width: 98%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .pp {
+        margin-left: 3%;
+        display: flex;
+        justify-content: space-around;
+        width: 20%;
+        height: auto;
+    }
+    
+    .img-border-radius {
+        height: 200px;
+        border-radius: 50%;
+    }
+    
+    .img-clip-path {
+        height: 200px;
+    }
+    
+    .img-carree{
+        clip-path:ellipse(50% 50%);
+    }
+
+    .texte{
+        font-size: 1.0em;
+        text-align: justify;
+        width: 80%;
+        margin-left: 20%;
+    }
+
+
+    blockquote {
+        position: relative;
+        padding: 40px 70px;
+        margin: 0%;
+    }
+    blockquote p {
+        margin: 0;
+    }
+    blockquote:before {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        content: "\f10d";
+        font-family: 'Fontawesome';
+        font-size: 20px;
+        color: #999;
+    }
+    blockquote:after {
+        position: absolute;
+        bottom: 25px;
+        right: 25px;
+        content: "\f10e";
+        font-family: 'Fontawesome';
+        font-size: 20px;
+        color: #999;
+    }
+}
+
+/*mettre en place la bdd et la page php pour les comm
+gerer les bugs  */

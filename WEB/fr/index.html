@@ -9,20 +9,28 @@
 <body>
     <header>
         <nav class="navbar">
-            <div class="logo"> <img src="tasko2.png" alt="logo"></div>
+            <picture class="logo">
+                <source media="(min-width: 320px)" srcset="Tasko_320.png">
+                <source media="(min-width: 641px)" srcset="Tasko_320.png">
+                <source media="(min-width: 961px)" srcset="Tasko_461.png">
+                <source media="(min-width: 1025px)" srcset="Tasko_461.png">
+                <source media="(min-width: 1281px)" srcset="Tasko_461.png">
+                <img src="Tasko_320.png">
+            </picture>
             <ul class="links">
-              <li class="under-menu"><a href="/WEB/fr/index.html">Acceuil</a>
+              <li class="under-menu"><a href="file:///home/sthomas/Documents/GitHub/SAE-5.02-Tasko/WEB/fr/index.html">Acceuil</a>
               </li>
               <li class="under-menu"><a href="Tasko.html">Produit </a>
                 <ul class="under-menu-under">
-                  <li><a href="Tasko.html">Tasko</a></li>
+                  <li><a href="file:///home/sthomas/Documents/GitHub/SAE-5.02-Tasko/Tasko.html">Tasko</a></li>
                 </ul>
               </li>
               <li><a href="mailto:tasko@totor.pro">Contact</a></li>
-              <li><a href="#">A propos</a></li>
+              <li class="under-menu"><a href="#">A propos</a>
                 <ul class="under-menu-under">
-                    <li><a href="taskoteam.html">L'équipe du projet</a></li>
+                    <li><a href="file:///home/sthomas/Documents/GitHub/SAE-5.02-Tasko/WEB/fr/taskoteam.html">L'équipe du projet</a></li>
                 </ul>
+              </li>  
                 <li class="under-menu"><a href="#">Langue &ensp;</a>
                     <ul class="under-menu-under">
                         <li><a href="/WEB/fr/index.html"><img class="imglg" src="france.png" alt=Drapeau Français> French</a></li>
@@ -32,6 +40,7 @@
                         <li><a href="/WEB/jp/index.html"><img class="imglg" src="japon.png" alt="Drapeau Japonais"> 日本語</a></li>
                         <li><a href="/WEB/ru/index.html"><img class="imglg" src="russie.png" alt="Drapeau Russe"> русский</a></li>
                     </ul>
+                </li>    
             </ul>
           </nav>
           
