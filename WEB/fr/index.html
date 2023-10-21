@@ -50,6 +50,22 @@
         
         <div class="comment_app">
             <h1 class="titre1">Commentaire</h1>
+            <form action="ajout_commentaire.php" method="post">
+                <label for="nom_utilisateur">Nom d'utilisateur :</label>
+                <input type="text" id="nom_utilisateur" name="nom_utilisateur" required>
+        
+                <label for="note">Note (de 1 à 5) :</label>
+                <input type="number" id="note" name="note" min="1" max="5" required>
+        
+                <label for="commentaire">Commentaire :</label>
+                <textarea id="commentaire" name="commentaire" required></textarea>
+        
+                <button type="submit">Ajouter le commentaire</button>
+            </form>
+        
+            
+            
+        
 
         </div>
         <div class="about_us">
