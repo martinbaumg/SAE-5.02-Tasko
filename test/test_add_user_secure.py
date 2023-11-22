@@ -7,9 +7,9 @@ try:
     db.connect()
 
     # Spécifier les informations de l'utilisateur
-    mail = "john@example.com"
-    password = "password"
-    name = "John"
+    mail = "testcheck@example.com"
+    password = "password123"
+    name = "TestCheck"
     rights_id = 1  # Remplacez par le véritable rights_id
 
     # Créer une requête d'ajout d'utilisateur en utilisant la méthode add_user_secure de RequestList
