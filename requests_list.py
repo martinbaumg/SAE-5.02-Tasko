@@ -318,12 +318,28 @@ class RequestList:
         return f"SELECT * FROM USER WHERE name LIKE '%{username}%'"
 
     @staticmethod
+    def search_project(projectname): # We define a method to search a project
+        return f"SELECT * FROM PROJECT WHERE name LIKE '%{projectname}%'"
+
+    @staticmethod
     def search_task(asker_id):  # We define a method to search a task
         return f"SELECT TASK.name FROM TASK WHERE TASK.id IN (SELECT task_id FROM TASK_USER WHERE user_id = '{asker_id}');"
 
     @staticmethod
     def search_subtask(subtaskname):  # We define a method to search a subtask
         return f"SELECT * FROM SUBTASK WHERE name LIKE '%{subtaskname}%'"
+
+    @staticmethod
+    def search_flag(flagname):  # We define a method to search a flag
+        return f"SELECT * FROM FLAG WHERE name LIKE '%{flagname}%'"
+    
+    @staticmethod
+    def search_priority(priorityname): # We define a method to search a priority
+        return f"SELECT * FROM PRIORITY WHERE name LIKE '%{priorityname}%'"
+    
+    @staticmethod
+    def search_state(statename): # We define a method to search a state
+        return f"SELECT * FROM STATE WHERE name LIKE '%{statename}%'"
 
     @staticmethod
     def search_task_by_name_and_state(
