@@ -304,11 +304,11 @@ class RequestList:
         return f"SELECT STATE.id, STATE.name FROM STATE INNER JOIN SUBTASK ON STATE.id = SUBTASK.state_id WHERE SUBTASK.id = '{subtask_id}'"
 
     @staticmethod
-    def get_password_secure(username, mail):
+    def get_password_secure(username, mail): # We define a method to get the password and the salt of a user
         return f"SELECT password, salt FROM USER WHERE name = '{username}' AND mail = '{mail}'"
 
     @staticmethod
-    def get_user_in_project(project_id):
+    def get_user_in_project(project_id): # We define a method to get the user in a project
         return f"SELECT USER.id, USER.name FROM USER INNER JOIN PROJECT_USER ON USER.id = PROJECT_USER.user_id WHERE PROJECT_USER.project_id = '{project_id}'"
 
     # SEARCH
