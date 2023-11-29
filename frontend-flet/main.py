@@ -27,7 +27,7 @@ class TodoApp(ft.UserControl):
 
 def main(page: ft.Page):
     page.title = "ToDo App"
-    page.horizontal_alignment = ft.CrossAxisAlignment.CENTER
+    page.horizontal_alignment = ft.CrossAxisAlignment.CENTER$
     page.update()
 
     # create application instance
