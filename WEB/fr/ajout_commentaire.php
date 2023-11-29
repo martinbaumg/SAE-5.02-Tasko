@@ -1,9 +1,9 @@
 <?php
 // Connexion à la base de données (à remplir avec vos informations de connexion)
-$serveur = "localhost";
-$utilisateur = "";
-$mot_de_passe = "";
-$base_de_donnees = "commentaire";
+$serveur = "45.154.99.10";
+$utilisateur = "admin";
+$mot_de_passe = "48wGK#t0:ZOx9c";
+$base_de_donnees = "commentaires";
 
 $connexion = new mysqli($serveur, $utilisateur, $mot_de_passe, $base_de_donnees);
 
