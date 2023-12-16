@@ -1,0 +1,77 @@
+---
+const { desc } = Astro.props;
+import type { Task } from '../data/TasksData.ts';
+type Props = Task;
+---
+
+<>
+  {
+    (
+      <div id="task1" class="mb-2">
+        <a
+          class="group flex w-full cursor-pointer flex-col justify-between gap-2 rounded-md border border-neutral-300 dark:border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400 md:flex-row md:items-center bg-neutral-200 dark:bg-neutral-800"
+          href="{link}"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <div class="flex flex-col md:flex-row md:items-center">
+            <div class="flex flex-col md:flex-row md:items-center mr-4">
+              <input
+                type="checkbox"
+                class="mr-2 taskCheckbox"
+                onclick="toggleTask('task1')"
+              />
+              <button
+                type="button"
+                class="inline-flex items-center px-2 py-1 text-sm font-medium text-gray-900 bg-white rounded-s-lg border-t border-b border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-neutral-700 dark:border-neutral-600 dark:text-white dark:hover:text-white dark:hover:bg-neutral-600 dark:focus:ring-blue-500 dark:focus:text-white"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10"
+                  />
+                </svg>
+              </button>
+              <button
+                type="button"
+                class="inline-flex items-center px-2 py-1 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-e-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-neutral-700 dark:border-neutral-600 dark:text-white dark:hover:text-white dark:hover:bg-neutral-600 dark:focus:ring-blue-500 dark:focus:text-white"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19.5 12h-15"
+                  />
+                </svg>
+              </button>
+              <p class="text-white ml-2">{desc}</p>
+            </div>
+          </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="w-6 h-6"
+          >
+            <path d="M5.566 4.657A4.505 4.505 0 016.75 4.5h10.5c.41 0 .806.055 1.183.157A3 3 0 0015.75 3h-7.5a3 3 0 00-2.684 1.657zM2.25 12a3 3 0 013-3h13.5a3 3 0 013 3v6a3 3 0 01-3 3H5.25a3 3 0 01-3-3v-6zM5.25 7.5c-.41 0-.806.055-1.184.157A3 3 0 016.75 6h10.5a3 3 0 012.683 1.657A4.505 4.505 0 0018.75 7.5H5.25z" />
+          </svg>
+        </a>
+      </div>
+    )
+  }
+</>

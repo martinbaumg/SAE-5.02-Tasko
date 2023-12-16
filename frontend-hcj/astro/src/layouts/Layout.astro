@@ -1,0 +1,16 @@
+---
+import MainHead from './MainHead.astro';
+const { title, seoDesc, seoTitle } = Astro.props;
+import Nav from './NavBar.astro';
+import SideBar from '../components/SideBar.astro';
+---
+
+<!doctype html>
+<html lang="en">
+  <MainHead title={title} seoTitle={seoTitle} seoDesc={seoDesc} />
+  <body class="bg-neutral-100 dark:bg-neutral-700">
+    <Nav />
+    <SideBar />
+    <slot />
+  </body>
+</html>
