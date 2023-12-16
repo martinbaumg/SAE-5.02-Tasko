@@ -5,23 +5,33 @@ import TasksDone from '../components/TasksDone.astro';
 import SearchBar from '../components/SearchBar.astro';
 import tasks from '../data/TasksData.ts';
 import tasksDone from '../data/TasksDoneData.ts';
+import DeleteModal from '../components/DeleteModal.astro';
+import AddModal from '../components/AddModal.astro';
 ---
+
+<script src="../scripts/DeleteModal.js"></script>
+<script src="../scripts/AddModal.js"></script>
 
 <Layout
   seoTitle="Tasko - Task Manager"
   seoDesc="Tasko is a robust and user-friendly task management application designed to enhance your productivity and collaboration."
 />
-
 <div class="p-4 sm:ml-64 dark:bg-neutral-700">
   <div class="p-4 mt-14">
     <SearchBar />
     <h2 class="mb-2 mt-2 text-3xl font-semibold text-gray-900 dark:text-white">
       List 1
     </h2>
+
     {tasks.length !== 0 && tasks.map((task) => <Tasks {...task} />)}
     <h2 class="mb-2 text-3xl font-semibold text-gray-900 dark:text-white">
       Done
     </h2>
-    {tasksDone.length !== 0 && tasksDone.map((taskDone) => <TasksDone {...taskDone} />)}
+    {
+      tasksDone.length !== 0 &&
+        tasksDone.map((taskDone) => <TasksDone {...taskDone} />)
+    }
   </div>
 </div>
+<AddModal />
+<DeleteModal />
