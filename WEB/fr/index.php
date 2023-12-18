@@ -18,7 +18,7 @@
                 <img src="Tasko_320.png">
             </picture>
             <ul class="links">
-              <li class="under-menu"><a href="file:///home/sthomas/Documents/GitHub/SAE-5.02-Tasko/WEB/fr/index.html">Acceuil</a>
+              <li class="under-menu"><a href="file:///home/sthomas/Documents/GitHub/SAE-5.02-Tasko/WEB/fr/index.php">Acceuil</a>
               </li>
               <li class="under-menu"><a href="Tasko.html">Produit </a>
                 <ul class="under-menu-under">
