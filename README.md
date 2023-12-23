@@ -29,6 +29,8 @@ Tasko is a robust and user-friendly task management application designed to enha
 
 To get started with Tasko, follow our [comprehensive installation and setup guide](link) to make the most of its features.
 
+To get our application, follow [this link](https://tasko.totor.pro) for download.
+
 ## Contributing
 
 We welcome contributions from the open-source community. If you'd like to contribute or report issues, please refer to our [Contribution Guidelines](link).
