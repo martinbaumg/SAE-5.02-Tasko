@@ -1,5 +1,6 @@
 
 .vscode/settings.json
+database_connection.py
 __pycache__/database_connection.cpython-312.pyc
 __pycache__/methods_list.cpython-312.pyc
 __pycache__/requests_list.cpython-312.pyc
