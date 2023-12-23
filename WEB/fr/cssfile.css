@@ -1,0 +1,1854 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2e2d2d;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.navbar{
+    background-color: #2e2d2d;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    margin-left: 3%;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.navbar ul{
+    list-style-type: none;
+}
+
+.navbar ul li{
+    float: left;
+    width: 200px;
+    margin-right: 20px;
+    text-align: center;
+    position:relative;
+}
+
+.navbar a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+.navbar a:hover{
+    color: #787a7a;
+    border-bottom: 2px solid white;
+}
+
+.under-menu-under{
+    display: none;
+    box-shadow: 0px 1px 2px #2e2d2d;
+    background-color: #2e2d2d;
+    position: absolute;
+    width: 200px;
+    z-index: 1000;
+    top: 100%; 
+    left: 0;
+    flex-direction: row;
+    padding: 0%;
+}
+.navbar > ul > li:hover .under-menu-under{
+    display: block;
+}
+.under-menu-under li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+.under-menu-under a{
+    padding: 10px;
+    padding-left: 0%;
+    border-bottom: none;
+}
+.under-menu-under a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+
+.under-menu > a::after{
+    content:"";
+    font-size: 12px;
+}
+
+.imglg{
+    width: 14%;
+    height: auto;
+    object-fit: cover;
+}
+
+.comment_app{
+    width: 30%;
+    height: 100%;
+    float: left;
+}
+
+.titre1{
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.about_us{
+    width: 70%;
+    height: 100%;
+    float: right;
+   
+}
+
+.titre2{
+    font-size: 1.5em;
+    font-weight: bold;
+    
+}
+
+.texte{
+    font-size: 1.2em;
+    text-align: justify;
+    margin:2%;
+}
+
+footer {
+    background-color: #2e2d2d;
+    color: #fff;
+    padding: 2px 0;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    align-items: center;
+    bottom: 0;
+    width: 100%;
+}
+
+.link_project_github {
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+label {
+    margin-right: 5px;
+}
+
+select {
+    padding: 5px;
+}
+
+/* Styles pour le lien GitHub */
+footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #787a7a;
+}
+
+/* Permet de mettre le footer en bas de page lors du scroll*/
+html {
+    position: relative;
+}
+
+body {
+    margin-bottom: 60px; 
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* CSS for Tasko.html file*/
+
+.text-app{
+    width: 80%;
+    height: 100%;
+    margin-left: 10%;
+    text-align: justify;
+}
+
+.carac-princi-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.carac-princi {
+    width: calc(50% - 10px); 
+}
+
+.titre1-text-app{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4em;
+    font-weight: bold;
+    text-align: left;
+}
+
+.p1-text-app{
+    font-size:1.5em;
+    width: 70%;
+    margin-left: 5%;
+}
+
+.titre2-text-app{
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 5%;
+}
+
+.li1{
+    font-size: 1.5em;
+    width: 70%;
+    margin-left: 5%;
+}
+
+.paragraphe-li1{
+    font-size: 0.7em;
+    width: 70%;}
+
+.li2{
+    font-size: 1.5em;
+    width: 70%;
+    margin-left: 20%;
+}
+
+.paragraphe-li2{
+    font-size: 0.7em;
+    width: 70%;
+}
+
+.li3{
+    font-size: 1.5em;
+    width: 70%;
+    margin-left: 40%;
+}
+
+.paragraphe-li3{
+    font-size: 0.7em;
+    width: 70%;
+}
+
+.li4{
+    font-size: 1.5em;
+    width: 70%;
+    margin-left: 23%;
+}
+
+.paragraphe-li4{
+    font-size: 0.7em;
+    width: 70%;
+}
+
+.li5{
+    font-size: 1.5em;
+    width: 70%;
+    margin-left: 12%;
+}
+
+.paragraphe-li5{
+    font-size: 1.0em;
+    width: 70%;
+    margin-left: 12%;   
+}
+
+.li6{
+    font-size: 1.5em;
+    width: 70%;
+    margin-left: 5%;
+}
+
+.paragraphe-li6{
+    font-size: 0.7em;
+    width: 70%;
+}
+
+.li7{
+    font-size: 1.5em;
+    width: 70%;
+    margin-left: 50%;
+}
+
+.paragraphe-li7{
+    font-size: 0.7em;
+    width: 70%;
+}
+
+.p2-text-app{
+    font-size: 1em;
+    width: 90%;
+}
+
+
+/*css pour la page about*/
+
+.about_us{
+    width: 90%;
+}
+
+.QSN{
+    width: 95%;
+    margin-left: 3%;
+    text-align: justify;
+}
+.pp_texte{
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+}
+.pp {
+    margin-left: 3%;
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+    height: auto;
+  }
+  
+  .img-border-radius {
+    height: 200px;
+    border-radius: 50%;
+  }
+  
+  .img-clip-path {
+    height: 200px;
+  }
+  
+  .img-carree{
+    clip-path:ellipse(50% 50%);
+  }
+
+  .texte{
+    font-size: 1.0em;
+    text-align: justify;
+    width: 65%;
+    margin-left: 10%;
+  }
+
+
+  blockquote {
+    position: relative;
+    padding: 40px 70px;
+    margin: 0%;
+  }
+  blockquote p {
+    margin: 0;
+  }
+  blockquote:before {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    font-size: 20px;
+    color: #999;
+  }
+  blockquote:after {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    content: "\f10e";
+    font-family: 'Fontawesome';
+    font-size: 20px;
+    color: #999;
+  }
+
+
+
+
+/* MIse en page pour le responsive */
+@media screen and (min-width: 320px) {
+
+    .body{
+        flex-direction: column;
+        margin: auto;
+        width: 100%;
+    }
+
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .under-menu {
+        width: 100%;
+    }
+
+    .under-menu-under {
+        display: none; 
+        padding: 0%;
+    }
+
+
+    .navbar ul li:hover .under-menu-under {
+        display: block; 
+        align-items: flex-start;
+    }
+
+    .titre1-text-app{
+        margin-top: 5%;
+        font-size: 1.5em;
+    }
+
+    .links{
+        margin: 0%;
+        width: auto;
+    }
+
+    .logo{
+        width: 90%;
+        height: auto;
+        }
+
+    .carac-princi{
+        width: 90%;
+        margin: 0%;
+    }
+
+    .titre2-text-app{
+        font-size: 1em;
+        font-weight: bold;
+        text-align: left;
+        margin-left: 0%;
+    }
+    
+    .p1-text-app{
+        font-size: 0.8em;
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .li1{
+        font-size: 1.0em;
+        width: auto;
+        margin: 0%;
+        margin-top: 5%;
+        font-weight: bold;
+
+    }
+    
+    .paragraphe-li1{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+        font-weight: lighter;
+    }
+    
+    .li2{
+        font-size: 1.0em;
+        width: auto;
+        margin: 0%;
+        margin-top: 5%;
+        font-weight: bold;
+
+    }
+    
+    .paragraphe-li2{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+        font-weight: lighter;
+    }
+
+    .li3{
+        font-size: 1.0em;
+        width: auto;
+        margin: 0%;
+        margin-top: 5%;
+        font-weight: bold;
+
+    }
+    
+    .paragraphe-li3{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+        font-weight: lighter;
+    }
+
+    .li4{
+        font-size: 1.0em;
+        width: auto;
+        margin: 0%;
+        margin-top: 5%;
+        font-weight: bold;
+
+    }
+    
+    .paragraphe-li4{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+        font-weight: lighter;
+    }
+
+    .li5{
+        font-size: 1.0em;
+        width: auto;
+        margin: 0%;
+        margin-top: 5%;
+        font-weight: bold;
+
+    }
+    
+    .paragraphe-li5{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+        font-weight: lighter;
+    }
+
+    .li6{
+        font-size: 1.0em;
+        width: auto;
+        margin: 0%;
+        margin-top: 5%;
+        font-weight: bold;
+
+    }
+    
+    .paragraphe-li6{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+        font-weight: lighter;
+    }
+
+    .li7{
+        font-size: 1.0em;
+        width: auto;
+        margin: 0%;
+        margin-top: 5%;
+        font-weight: bold;
+
+    }
+    
+    .paragraphe-li7{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+        font-weight: lighter;
+    }
+
+    .p2-text-app{
+        font-size: 0.6em;
+        width: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-weight: bold;
+    }
+
+    /*mise en page pour taskoteam*/
+    .about_us{
+        width: 90%;;
+    }
+
+    .QSN{
+        width: 100%;
+        margin-left: 3%;
+        text-align: justify;
+    }
+    .pp_texte{
+        width: 98%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .pp {
+        margin-left: 40%;
+        display: flex;
+        justify-content: column;
+        width: 15%;
+        height: auto;
+    }
+    
+    .img-border-radius {
+        height: 150px;
+        border-radius: 50%;
+    }
+    
+    .img-clip-path {
+        height: 150px;
+    }
+    
+    .img-carree{
+        clip-path:ellipse(50% 50%);
+    }
+
+    .texte{
+        font-size: 1.0em;
+        text-align: justify;
+        width: 100%;
+        margin: 0%;
+        
+    }
+
+
+    blockquote {
+        position: relative;
+        padding: 40px 70px;
+        margin: 0%;
+    }
+    blockquote p {
+        margin: 0;
+    }
+    blockquote:before {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        content: "\f10d";
+        font-family: 'Fontawesome';
+        font-size: 20px;
+        color: #999;
+    }
+    blockquote:after {
+        position: absolute;
+        bottom: 25px;
+        right: 25px;
+        content: "\f10e";
+        font-family: 'Fontawesome';
+        font-size: 20px;
+        color: #999;
+    }   
+}
+
+
+
+/*Dimension for tablette a vertical screen*/ 
+@media screen and (min-width: 641px) {
+
+    .body{
+        flex-direction: column;
+        margin: auto;
+        width: 100%;
+    }
+
+    .text-app{
+        margin-left: 5%;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .under-menu {
+        width: 100%;
+    }
+
+    .under-menu-under {
+        display: none; 
+        padding: 0%;
+    }
+
+
+    .navbar ul li:hover .under-menu-under {
+        display: block; 
+        align-items: flex-start;
+    }
+
+    .titre1-text-app{
+        margin: 0%;
+        margin-top: 10%;
+        width: 100%;
+        font-size: 2em;
+    }
+
+    .links{
+        margin: 0%;
+        width: auto;
+
+    }
+
+    .img{
+        width: 10%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .carac-princi{
+        width: 100%;
+        margin: 0%;
+    }
+
+    .titre2-text-app{
+        font-size: 1.75em;
+        font-weight: bold;
+        text-align: left;
+        margin-left: auto;
+    }
+    
+    .li1{
+        font-size: 1.2em;
+        width: auto;
+        margin: 0%;
+        margin-top: 8%;
+
+    }
+    
+    .paragraphe-li1{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+    
+    .li2{
+        font-size: 1.2em;
+        width: auto;
+        margin: 0%;
+        margin-top: 8%;
+    }
+    
+    .paragraphe-li2{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+    
+    .li3{
+        font-size: 1.2em;
+        width: auto;
+        margin: 0%;
+        margin-top: 8%;
+    }
+    
+    .paragraphe-li3{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+    
+    .li4{
+        font-size: 1.2em;
+        width: auto;
+        margin: 0%;
+        margin-top: 8%;
+    }
+    
+    .paragraphe-li4{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+    
+    .li5{
+        font-size: 1.2em;
+        width: auto;
+        margin: 0%;
+        margin-top: 8%;
+    }
+    
+    .paragraphe-li5{
+        font-size: 1.0em;
+        width: auto;
+        margin: 0%;  
+        margin-top: 2%;
+    }
+    
+    .li6{
+        font-size: 1.2em;
+        width: auto;
+        margin: 0%;
+        margin-top: 8%;
+    }
+    
+    .paragraphe-li6{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+    
+    .li7{
+        font-size: 1.2em;
+        width: auto;
+        margin: 0%;
+        margin-top: 8%;
+    }
+    
+    .paragraphe-li7{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+
+    .p2-text-app{
+        font-size: 1.2em;
+        width: 100%;
+        margin: 5%;
+    }
+
+    /*mise en page pour taskoteam*/
+    .about_us{
+        width: 90%;
+    }
+
+    .QSN{
+        width: 95%;
+        margin-left: 3%;
+        text-align: justify;
+    }
+    .pp_texte{
+        width: 98%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .pp {
+        margin-left: 10%;
+        display: flex;
+        justify-content: space-around;
+        width: 15%;
+        height: auto;
+    }
+    
+    .img-border-radius {
+        height: 150px;
+        border-radius: 50%;
+    }
+    
+    .img-clip-path {
+        height: 150px;
+    }
+    
+    .img-carree{
+        clip-path:ellipse(50% 50%);
+    }
+
+    .texte{
+        font-size: 1.0em;
+        text-align: justify;
+        width: 70%;
+        margin: 0%;
+        
+    }
+
+
+    blockquote {
+        position: relative;
+        padding: 40px 70px;
+        margin: 0%;
+    }
+    blockquote p {
+        margin: 0;
+    }
+    blockquote:before {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        content: "\f10d";
+        font-family: 'Fontawesome';
+        font-size: 20px;
+        color: #999;
+    }
+    blockquote:after {
+        position: absolute;
+        bottom: 25px;
+        right: 25px;
+        content: "\f10e";
+        font-family: 'Fontawesome';
+        font-size: 20px;
+        color: #999;
+    }
+}
+
+@media screen and (min-width: 961px) {
+
+    .body{
+        flex-direction: column;
+        margin: auto;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start; /
+    }
+
+    .under-menu {
+        width: 100%;
+    }
+
+    .under-menu-under {
+        display: none; 
+        padding: 0%;
+    }
+
+
+    .navbar ul li:hover .under-menu-under {
+        display: block; 
+        align-items: flex-start,;
+    }
+
+    .titre1-text-app{
+        margin-top: 5%;
+        font-size: 2.5em;
+        margin-left: 2%;
+        width: 95%;
+    }
+
+    .links{
+        margin: 0%;
+        width: auto;
+
+    }
+
+    .text-app{
+        margin-left: 0%;
+        width: 100%;
+    }
+
+    .p1-text-app{
+        width: 90%;
+        margin-left: 5%;
+        font-size: 1.5em;
+    }
+
+    .carac-princi{
+        width: 80%;
+        margin-left: 5%;
+    }
+
+    .titre2-text-app{
+        font-size: 1.75em;
+        font-weight: bold;
+        text-align: left;
+        margin-left: 5%;
+    }
+    
+    .li1{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+
+    }
+    
+    .paragraphe-li1{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+    
+    .li2{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+    }
+    
+    .paragraphe-li2{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+    
+    .li3{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+    }
+    
+    .paragraphe-li3{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+    
+    .li4{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+    }
+    
+    .paragraphe-li4{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+    
+    .li5{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+    }
+    
+    .paragraphe-li5{
+        font-size: 1.25em;
+        width: auto;
+        margin: 0%;  
+        margin-top: 2%;
+    }
+    
+    .li6{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+    }
+    
+    .paragraphe-li6{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+    
+    .li7{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+    }
+    
+    .paragraphe-li7{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+
+    .p2-text-app{
+        font-size: 1.5em;
+        width: 96%;
+        margin-left: 2%;
+    }
+
+    /*mise en page pour taskoteam*/
+    .about_us{
+        width: 90%;
+    }
+
+    .QSN{
+        width: 95%;
+        margin-left: 3%;
+        text-align: justify;
+    }
+    .pp_texte{
+        width: 98%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .pp {
+        margin-left: 3%;
+        display: flex;
+        justify-content: space-around;
+        width: 20%;
+        height: auto;
+    }
+    
+    .img-border-radius {
+        height: 200px;
+        border-radius: 50%;
+    }
+    
+    .img-clip-path {
+        height: 200px;
+    }
+    
+    .img-carree{
+        clip-path:ellipse(50% 50%);
+    }
+
+    .texte{
+        font-size: 1.0em;
+        text-align: justify;
+        width: 65%;
+        margin-left: 10%;
+    }
+
+
+    blockquote {
+        position: relative;
+        padding: 40px 70px;
+        margin: 0%;
+    }
+    blockquote p {
+        margin: 0;
+    }
+    blockquote:before {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        content: "\f10d";
+        font-family: 'Fontawesome';
+        font-size: 20px;
+        color: #999;
+    }
+    blockquote:after {
+        position: absolute;
+        bottom: 25px;
+        right: 25px;
+        content: "\f10e";
+        font-family: 'Fontawesome';
+        font-size: 20px;
+        color: #999;
+    }
+}
+@media screen and (min-width: 1025px) {
+
+    .body{
+        flex-direction: column;
+        margin: auto;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start; /
+    }
+
+    .under-menu {
+        width: 100%;
+    }
+
+    .under-menu-under {
+        display: none; 
+        padding: 0%;
+    }
+
+
+    .navbar ul li:hover .under-menu-under {
+        display: block; 
+        align-items: flex-start,;
+    }
+
+    .titre1-text-app{
+        margin-top: 5%;
+        font-size: 2.5em;
+        margin-left: 2%;
+        width: 95%;
+    }
+
+    .links{
+        margin: 0%;
+        width: auto;
+
+    }
+
+    .text-app{
+        margin-left: 0%;
+        width: 100%;
+    }
+
+    .p1-text-app{
+        width: 90%;
+        margin-left: 5%;
+        font-size: 1.5em;
+    }
+
+    .carac-princi{
+        width: 80%;
+        margin-left: 5%;
+    }
+
+    .titre2-text-app{
+        font-size: 1.75em;
+        font-weight: bold;
+        text-align: left;
+        margin-left: 5%;
+    }
+    
+    .li1{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+
+    }
+    
+    .paragraphe-li1{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+    
+    .li2{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+    }
+    
+    .paragraphe-li2{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+    
+    .li3{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+    }
+    
+    .paragraphe-li3{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+    
+    .li4{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+    }
+    
+    .paragraphe-li4{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+    
+    .li5{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+    }
+    
+    .paragraphe-li5{
+        font-size: 1.25em;
+        width: auto;
+        margin: 0%;  
+        margin-top: 2%;
+    }
+    
+    .li6{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+    }
+    
+    .paragraphe-li6{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+    
+    .li7{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+    }
+    
+    .paragraphe-li7{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+
+    .p2-text-app{
+        font-size: 1.5em;
+        width: 96%;
+        margin-left: 2%;
+    }
+
+    /*mise en page pour taskoteam*/
+    .about_us{
+        width: 90%;
+    }
+
+    .QSN{
+        width: 95%;
+        margin-left: 3%;
+        text-align: justify;
+    }
+    .pp_texte{
+        width: 98%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .pp {
+        margin-left: 3%;
+        display: flex;
+        justify-content: space-around;
+        width: 20%;
+        height: auto;
+    }
+    
+    .img-border-radius {
+        height: 200px;
+        border-radius: 50%;
+    }
+    
+    .img-clip-path {
+        height: 200px;
+    }
+    
+    .img-carree{
+        clip-path:ellipse(50% 50%);
+    }
+
+    .texte{
+        font-size: 1.0em;
+        text-align: justify;
+        width: 65%;
+        margin-left: 10%;
+    }
+
+
+    blockquote {
+        position: relative;
+        padding: 40px 70px;
+        margin: 0%;
+    }
+    blockquote p {
+        margin: 0;
+    }
+    blockquote:before {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        content: "\f10d";
+        font-family: 'Fontawesome';
+        font-size: 20px;
+        color: #999;
+    }
+    blockquote:after {
+        position: absolute;
+        bottom: 25px;
+        right: 25px;
+        content: "\f10e";
+        font-family: 'Fontawesome';
+        font-size: 20px;
+        color: #999;
+    }
+}
+
+@media screen and (min-width: 1281px) {
+
+    .body{
+        flex-direction: column;
+        margin: auto;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start; /
+    }
+
+    .under-menu {
+        width: 100%;
+    }
+
+    .under-menu-under {
+        display: none; 
+        padding: 0%;
+    }
+
+
+    .navbar ul li:hover .under-menu-under {
+        display: block; 
+        align-items: flex-start,;
+    }
+
+    .titre1-text-app{
+        margin-top: 5%;
+        font-size: 3em;
+        margin-left: 2%;
+        width: 95%;
+    }
+
+    .links{
+        margin: 0%;
+        width: auto;
+
+    }
+
+    .text-app{
+        margin-left: 0%;
+        width: 100%;
+    }
+
+    .p1-text-app{
+        width: 90%;
+        margin-left: 5%;
+        font-size: 1.5em;
+    }
+
+    .carac-princi{
+        width: 80%;
+        margin-left: 5%;
+    }
+
+    .titre2-text-app{
+        font-size: 1.75em;
+        font-weight: bold;
+        text-align: left;
+        margin-left: 5%;
+    }
+    
+    .li1{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+
+    }
+    
+    .paragraphe-li1{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+    
+    .li2{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+    }
+    
+    .paragraphe-li2{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+    
+    .li3{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+    }
+    
+    .paragraphe-li3{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+    
+    .li4{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+    }
+    
+    .paragraphe-li4{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+    
+    .li5{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+    }
+    
+    .paragraphe-li5{
+        font-size: 1.25em;
+        width: auto;
+        margin: 0%;  
+        margin-top: 2%;
+    }
+    
+    .li6{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+    }
+    
+    .paragraphe-li6{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+    
+    .li7{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+    }
+    
+    .paragraphe-li7{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+
+    .p2-text-app{
+        font-size: 1.5em;
+        width: 96%;
+        margin-left: 2%;
+    }
+
+
+    /*mise en page pour taskoteam*/
+    .about_us{
+        width: 90%;
+    }
+
+    .QSN{
+        width: 95%;
+        margin-left: 3%;
+        text-align: justify;
+    }
+    .pp_texte{
+        width: 98%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .pp {
+        margin-left: 3%;
+        display: flex;
+        justify-content: space-around;
+        width: 20%;
+        height: auto;
+    }
+    
+    .img-border-radius {
+        height: 200px;
+        border-radius: 50%;
+    }
+    
+    .img-clip-path {
+        height: 200px;
+    }
+    
+    .img-carree{
+        clip-path:ellipse(50% 50%);
+    }
+
+    .texte{
+        font-size: 1.0em;
+        text-align: justify;
+        width: 65%;
+        margin-left: 10%;
+    }
+
+
+    blockquote {
+        position: relative;
+        padding: 40px 70px;
+        margin: 0%;
+    }
+    blockquote p {
+        margin: 0;
+    }
+    blockquote:before {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        content: "\f10d";
+        font-family: 'Fontawesome';
+        font-size: 20px;
+        color: #999;
+    }
+    blockquote:after {
+        position: absolute;
+        bottom: 25px;
+        right: 25px;
+        content: "\f10e";
+        font-family: 'Fontawesome';
+        font-size: 20px;
+        color: #999;
+    }
+}
+
+@media screen and (min-width: 1425px) {
+
+    .body{
+        flex-direction: column;
+        margin: auto;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start; /
+    }
+
+    .under-menu {
+        width: 100%;
+    }
+
+    .under-menu-under {
+        display: none; 
+        padding: 0%;
+    }
+
+
+    .navbar ul li:hover .under-menu-under {
+        display: block; 
+        align-items: flex-start,;
+    }
+
+    .titre1-text-app{
+        margin-top: 5%;
+        font-size: 3em;
+        margin-left: 2%;
+        width: 95%;
+    }
+
+    .links{
+        margin: 0%;
+        width: auto;
+
+    }
+
+    .text-app{
+        margin-left: 0%;
+        width: 100%;
+    }
+
+    .p1-text-app{
+        width: 90%;
+        margin-left: 5%;
+        font-size: 1.5em;
+    }
+
+    .carac-princi{
+        width: 80%;
+        margin-left: 5%;
+    }
+
+    .titre2-text-app{
+        font-size: 1.75em;
+        font-weight: bold;
+        text-align: left;
+        margin-left: 5%;
+    }
+    
+    .li1{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+
+    }
+    
+    .paragraphe-li1{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+    
+    .li2{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+    }
+    
+    .paragraphe-li2{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+    
+    .li3{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+    }
+    
+    .paragraphe-li3{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+    
+    .li4{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+    }
+    
+    .paragraphe-li4{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+    
+    .li5{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+    }
+    
+    .paragraphe-li5{
+        font-size: 1.25em;
+        width: auto;
+        margin: 0%;  
+        margin-top: 2%;
+    }
+    
+    .li6{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+    }
+    
+    .paragraphe-li6{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+    
+    .li7{
+        font-size: 1.5em;
+        width: auto;
+        margin: 0%;
+        margin-top: 3%;
+    }
+    
+    .paragraphe-li7{
+        font-size: 0.8em;
+        width: auto;
+        margin: 0%;
+        margin-top: 2%;
+    }
+
+    .p2-text-app{
+        font-size: 1.5em;
+        width: 96%;
+        margin-left: 2%;
+    }
+
+
+    /*mise en page pour taskoteam*/
+    .about_us{
+        width: 90%;
+    }
+
+    .QSN{
+        width: 95%;
+        margin-left: 3%;
+        text-align: justify;
+    }
+    .pp_texte{
+        width: 98%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .pp {
+        margin-left: 3%;
+        display: flex;
+        justify-content: space-around;
+        width: 20%;
+        height: auto;
+    }
+    
+    .img-border-radius {
+        height: 200px;
+        border-radius: 50%;
+    }
+    
+    .img-clip-path {
+        height: 200px;
+    }
+    
+    .img-carree{
+        clip-path:ellipse(50% 50%);
+    }
+
+    .texte{
+        font-size: 1.0em;
+        text-align: justify;
+        width: 80%;
+        margin-left: 20%;
+    }
+
+
+    blockquote {
+        position: relative;
+        padding: 40px 70px;
+        margin: 0%;
+    }
+    blockquote p {
+        margin: 0;
+    }
+    blockquote:before {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        content: "\f10d";
+        font-family: 'Fontawesome';
+        font-size: 20px;
+        color: #999;
+    }
+    blockquote:after {
+        position: absolute;
+        bottom: 25px;
+        right: 25px;
+        content: "\f10e";
+        font-family: 'Fontawesome';
+        font-size: 20px;
+        color: #999;
+    }
+}
+
+/*mettre en place la bdd et la page php pour les comm
+gerer les bugs  */
