@@ -40,7 +40,7 @@ To start Tasko, simply use `python main.py`in the folder /BACKEND/Tasko when you
 
 When launching the application, it is necessary to log in. This step involves providing your credentials, such as a username and password, to gain access to the application's features and functionalities. Logging in ensures that the application can identify and authenticate the user, providing a personalized and secure experience.
 
-![[login.png]]
+![[https://github.com/martinbaumg/SAE-5.02-Tasko/tree/main/BACKEND/docs/img/login.png]]
 After successfully logging in, you will be directed to the application's homepage. Here, you have the ability to perform various actions, including adding tasks to your list. The homepage serves as a central hub where you can manage your tasks, view important information, and navigate through the application's features.
 
 ![[add.png]]
