@@ -43,10 +43,10 @@ When launching the application, it is necessary to log in. This step involves pr
 ![alt text](https://github.com/martinbaumg/SAE-5.02-Tasko/blob/main/BACKEND/docs/img/login.png)
 After successfully logging in, you will be directed to the application's homepage. Here, you have the ability to perform various actions, including adding tasks to your list. The homepage serves as a central hub where you can manage your tasks, view important information, and navigate through the application's features.
 
-![[add.png]]
+![alt text](https://github.com/martinbaumg/SAE-5.02-Tasko/blob/main/BACKEND/docs/img/add.png)
 You have the option to add a due date to specify when a task should be completed, provide a detailed description to elaborate on the task's requirements, or if necessary, delete the task : 
 
-![[edit.png]]
+![alt text](https://github.com/martinbaumg/SAE-5.02-Tasko/blob/main/BACKEND/docs/img/edit.png)
 In addition to task management and customization, you also have the flexibility to organize your tasks into different sections. Typically, these sections include 'Pas encore fait' for tasks that are pending or not completed, and 'Fait' for tasks that have been successfully completed. This feature allows you to track the progress of your tasks, categorizing them based on their status. By moving tasks between these sections, you can easily monitor your accomplishments and prioritize your work effectively.
 
 This application provides a user-friendly platform for managing tasks efficiently. After logging in, you can access the homepage to create, modify, and organize tasks. Features such as adding due dates, descriptions, and moving tasks between sections like 'Pas encore fait' and 'Fait' enhance productivity and organization. Whether you're tackling a personal to-do list or managing tasks in a professional setting, this application simplifies the process, helping you stay on top of your goals and responsibilities.
