@@ -16,7 +16,7 @@ To get started with Tasko, follow our [comprehensive installation and setup guid
 
 ## Contributing
 
-We welcome contributions from the open-source community. If you'd like to contribute or report issues, please refer to our [Contribution Guidelines](link).
+We welcome contributions from the open-source community. If you'd like to contribute or report issues, please refer to our [Technical Documentation](https://github.com/martinbaumg/SAE-5.02-Tasko/blob/main/BACKEND/docs/Technical%20Documentation.md) to understand the project's architecture.
 
 ---
 
