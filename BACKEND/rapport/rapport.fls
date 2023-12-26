@@ -1,8 +1,8 @@
-PWD /Users/martin-baumgaertner/Documents/SAE-5.02-Tasko/rapport
+PWD /Users/martin-baumgaertner/Documents/SAE-5.02-Tasko/BACKEND/rapport
 INPUT /usr/local/texlive/2023/texmf.cnf
 INPUT /usr/local/texlive/2023/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/martin-baumgaertner/Documents/SAE-5.02-Tasko/rapport/rapport.tex
+INPUT /Users/martin-baumgaertner/Documents/SAE-5.02-Tasko/BACKEND/rapport/rapport.tex
 OUTPUT rapport.log
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/article.cls
@@ -866,10 +866,6 @@ INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
 OUTPUT rapport.toc
-INPUT ./rapport.lof
-INPUT rapport.lof
-INPUT rapport.lof
-OUTPUT rapport.lof
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/ecbx1440.tfm
 INPUT rapport.aux
 INPUT ./rapport.out
