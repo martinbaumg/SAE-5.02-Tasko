@@ -22,8 +22,11 @@ $requete->bind_param("sis", $nom_utilisateur, $note, $commentaire);
 
 if ($requete->execute()) {
     echo "Commentaire ajouté avec succès.";
+    //revoie vers la page d'acceuil
+    header('Location: index.php');
 } else {
     echo "Échec de l'ajout du commentaire : " . $requete->error;
+    header('Location: index.php');
 }
 
 $requete->close();

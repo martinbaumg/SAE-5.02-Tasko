@@ -180,6 +180,8 @@ footer {
     width: 100%;
 }
 
+
+
 /* CSS for Tasko.html file*/
 
 .text-app{
@@ -641,8 +643,6 @@ footer {
         color: #999;
     }   
 }
-
-
 
 /*Dimension for tablette a vertical screen*/ 
 @media screen and (min-width: 641px) {
@@ -1898,4 +1898,93 @@ button {
 
 button:hover {
     background-color: #45a049;
+}
+
+
+/*miseen page ajout comm php ref à ajout comm*/
+.commentaire {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.utilisateur {
+    color: #333;
+}
+
+.note {
+    color: #007bff;
+}
+
+.commentaire-texte {
+    margin-top: 10px;
+}
+
+/*mise en page index.php ref à ajout comm*/
+
+
+.comment_app,
+.afficher_commentaire {
+    max-width: 88%;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.comment_app {
+    margin-bottom: 20px;
+}
+
+.comment_app label {
+    margin-top: 10px;
+}
+
+.comment_app input,
+.comment_app textarea,
+.comment_app button {
+    margin-top: 5px;
+}
+
+
+/*test media queries for having css adaptation*/
+@media screen and (max-width: 320px) {
+    .comment_app {
+        max-width: 100%;
+        margin: 5% 2%;
+    }
+
+    .comment_app input,
+    .comment_app textarea {
+        width: calc(100% - 16px);
+        /* La largeur est réduite de 16px pour compenser la largeur des padding */
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 641px) {
+    .comment_app {
+        max-width: 100%;
+        margin: 5% 2%;
+    }
+}
+
+@media screen and (min-width: 642px) and (max-width: 961px) {
+    .comment_app {
+        max-width: 90%;
+    }
+}
+
+@media screen and (min-width: 962px) and (max-width: 1025px) {
+    .comment_app {
+        max-width: 80%;
+    }
+}
+
+@media screen and (min-width: 1026px) and (max-width: 1281px) {
+    .comment_app {
+        max-width: 75%;
+    }
 }

@@ -47,6 +47,13 @@
     </header>
     
     <main>
+    <div class="about_us">
+            <h1 class="titre2">A propos de nous</h1>
+            <p class="texte">Tasko est une application de gestion de tâches qui vous permet de gérer vos tâches quotidiennes, hebdomadaires et mensuelles. Vous pouvez également créer des tâches récurrentes et des tâches à durée limitée. Tasko vous permet de gérer vos tâches de manière simple et efficace. </p>
+            
+
+
+        </div>
         
         <div class="comment_app">
             <h1 class="titre1">Commentaire</h1>
@@ -70,14 +77,6 @@
                include 'afficher_commentaire.php';
             ?>
 
-
-        <div class="about_us">
-            <h1 class="titre2">A propos de nous</h1>
-            <p class="texte">Tasko est une application de gestion de tâches qui vous permet de gérer vos tâches quotidiennes, hebdomadaires et mensuelles. Vous pouvez également créer des tâches récurrentes et des tâches à durée limitée. Tasko vous permet de gérer vos tâches de manière simple et efficace. </p>
-            
-
-
-        </div>
 
 
     </main>
