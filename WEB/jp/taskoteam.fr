@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssfile.css">
+    <title>Tasko</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <picture class="logo">
+                <source media="(min-width: 320px)" srcset="Tasko_320.png">
+                <source media="(min-width: 641px)" srcset="Tasko_320.png">
+                <source media="(min-width: 961px)" srcset="Tasko_461.png">
+                <source media="(min-width: 1025px)" srcset="Tasko_461.png">
+                <source media="(min-width: 1281px)" srcset="Tasko_461.png">
+                <img src="Tasko_320.png">
+            </picture>
+            <ul class="links">
+                <li class="under-menu"><a href="file:///home/sthomas/Documents/GitHub/SAE-5.02-Tasko/WEB/fr/index.html">ホーム</a>
+                </li>
+                <li class="under-menu"><a href="#">製品 </a>
+                    <ul class="under-menu-under">
+                        <li><a href="file:///home/sthomas/Documents/GitHub/SAE-5.02-Tasko/WEB/fr/Tasko.html">Tasko</a></li>
+                    </ul>
+                </li>
+                <li><a href="mailto:tasko@totor.pro">お問い合わせ</a></li>
+                <li class="under-menu"><a href="#">私たちについて</a>
+                    <ul class="under-menu-under">
+                        <li><a href="file:///home/sthomas/Documents/GitHub/SAE-5.02-Tasko/WEB/fr/taskoteam.html">プロジェクトチーム</a></li>
+                    </ul>
+                </li>
+                <li class="under-menu"><a href="#">言語 &ensp;</a>
+                    <ul class="under-menu-under">
+                        <li><a href="/WEB/fr/index.html"><img class="imglg" src="france.png" alt="フランスの旗"> フランス語</a></li>
+                        <li><a href="/WEB/de/index.html"><img class="imglg" src="germany.png" alt="ドイツの旗"> ドイツ語</a></li>
+                        <li><a href="/WEB/en/index.html"><img class="imglg" src="etats-unis.png" alt="アメリカの旗"> 英語</a></li>
+                        <li><a href="/WEB/es/index.html"><img class="imglg" src="espagnol.png" alt="スペインの旗"> スペイン語</a></li>
+                        <li><a href="/WEB/jp/index.html"><img class="imglg" src="japon.png" alt="日本の旗"> 日本語</a></li>
+                        <li><a href="/WEB/ru/index.html"><img class="imglg" src="russie.png" alt="ロシアの旗"> ロシア語</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="about-us">
+            <h1 class="QSN">私たちは誰ですか？</h1>
+        </div>
+        <div class="pp_texte">
+            <div class="pp">
+                <img class="img-clip-path img-carree" src="martin.png" alt="マルタン">
+            </div>
+            <div class="texte">
+                <blockquote class="texte_profil">
+                    <p>マルタン・バウムガートナー - 新しいテクノロジーに情熱を持つ、オレンジでネットワークと通信のライセンスを取得する学生です。将来のネットワークに貢献する準備ができています。</p>
+                </blockquote>
+            </div>
+        </div>
+        <div class="pp_texte">
+            <div class="pp">
+                <img class="img-clip-path img-carree" src="thomas.png" alt="トーマス">
+            </div>
+            <div class="texte">
+                <blockquote class="texte_profil">
+                    <p>トーマス - ストゥーブ。オレンジでネットワークと通信のライセンスを取得する学生。私はネットワークの問題を解決し、お客様と業務の架け橋となるために最前線にいます。</p>
+                </blockquote>
+            </div>
+        </div>
+        <div class="pp_texte">
+            <div class="pp">
+                <img class="img-clip-path img-carree" src="louis.png" alt="ルイ" title="ルイ プルビオーズ">
+            </div>
+            <div class="texte">
+                <blockquote class="texte_profil">
+                    <p>ルイ・プルビオーズ - 現在、ネットワークおよび通信技術のBUTコースの3年生で、魅力的でセキュアなITの世界で成長しています。オレンジでの見習いとして、ストラクチャリングされたネットワークのインターベンション技術者として、バックボーンネットワークとモバイルネットワークの信頼性に貢献しています。</p>
+                </blockquote>
+            </div>
+        </div>
+        <div class="pp_texte">
+            <div class="pp">
+                <img class="img-clip-path img-carree" src="tasko.png" alt="ミハイル">
+            </div>
+            <div class="texte">
+                <blockquote class="texte_profil">
+                    <p>👋 こんにちは！私の名前はミハイル・カラペチャンです。現在、ネットワークと通信のBUTコースの3年生で、Mistral.comの見習いとしてネットワークと開発の技術者です。
+                          モバイル開発のエキスパートになり、このエキサイティングな分野でのイノベーションに貢献することが目標です。コラボレーションと学習の機会に常に開かれています。ネットワーク、通信、モバイル開発、または他の興味深い職業機会について話し合いたい場合は、お気軽にお問い合わせください！ 🚀</p>
+                </blockquote>
+            </div>
+        </div>
+        <div class="pp_texte">
+            <div class="pp">
+                <img class="img-clip-path img-carree" src="tasko.png" alt="ビクター">
+            </div>
+            <div class="texte">
+                <blockquote class="texte_profil">
+                    <p>私はヴィクトール・ウェトヴィラー、現在ネットワークおよび通信のBUTコースの3年生です。現在、オベルネ市庁舎での実習を通じて自分の経歴を積んでいます。それ以外にも、Ecowanという企業のオーナーです。</p>
+                </blockquote>
+            </div>
+        </div>
+        <div class="pp_texte">
+            <div class="pp">
+                <img class="img-clip-path img-carree" src="nico.png" alt="ニコラス">
+            </div>
+            <div class="texte">
+                <blockquote class="texte_profil">
+                    <p>私はニコラス・ワグナー、現在ネットワークおよび通信のBUTコースの3年生です。現在、Mistral.comでの実習を通じてネットワークおよび通信技術者のポジションを務めています。それ以外にも、新しい技術に情熱を注いでいます。私の目標は、父の仕事を讃え、家族の企業の経営を引き継ぐことです。</p>
+                </blockquote>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="link_project_github"><p>© 2023 Tasko <a href="https://github.com/martinbaumg/SAE-5.02-Tasko">GitHubでプロジェクトを表示</a></p></div>
+    </footer>
+    <script src="javascript.js"></script>
+</body>
+</html>

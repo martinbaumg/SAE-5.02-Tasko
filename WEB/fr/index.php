@@ -18,7 +18,7 @@
                 <img src="Tasko_320.png">
             </picture>
             <ul class="links">
-              <li class="under-menu"><a href="file:///home/sthomas/Documents/GitHub/SAE-5.02-Tasko/WEB/fr/index.html">Acceuil</a>
+              <li class="under-menu"><a href="file:///home/sthomas/Documents/GitHub/SAE-5.02-Tasko/WEB/fr/index.php">Acceuil</a>
               </li>
               <li class="under-menu"><a href="Tasko.html">Produit </a>
                 <ul class="under-menu-under">
@@ -47,6 +47,13 @@
     </header>
     
     <main>
+    <div class="about_us">
+            <h1 class="titre2">A propos de nous</h1>
+            <p class="texte">Tasko est une application de gestion de tâches qui vous permet de gérer vos tâches quotidiennes, hebdomadaires et mensuelles. Vous pouvez également créer des tâches récurrentes et des tâches à durée limitée. Tasko vous permet de gérer vos tâches de manière simple et efficace. </p>
+            
+
+
+        </div>
         
         <div class="comment_app">
             <h1 class="titre1">Commentaire</h1>
@@ -70,14 +77,6 @@
                include 'afficher_commentaire.php';
             ?>
 
-
-        <div class="about_us">
-            <h1 class="titre2">A propos de nous</h1>
-            <p class="texte">Tasko est une application de gestion de tâches qui vous permet de gérer vos tâches quotidiennes, hebdomadaires et mensuelles. Vous pouvez également créer des tâches récurrentes et des tâches à durée limitée. Tasko vous permet de gérer vos tâches de manière simple et efficace. </p>
-            
-
-
-        </div>
 
 
     </main>
